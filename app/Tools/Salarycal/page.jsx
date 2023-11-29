@@ -1,5 +1,8 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useRef } from "react";
+import { Chart, registerables } from 'chart.js';
+
+Chart.register(...registerables);
 
 const page = () => {
   const [salaryAmount, setSalaryAmount] = useState(1200);
@@ -10,6 +13,8 @@ const page = () => {
   const [unpaidVacationDays, setUnpaidVacationDays] = useState(52);
   const [result, setResult] = useState(0);
   const [yearlyEarnings, setYearlyEarnings] = useState(0);
+  const chartRef = useRef(null);
+  const chartInstance = useRef(null);
   // useEffect(() => {
   //   let weeklyEarnings = 0;
   //   let monthlyEarnings = 0;
@@ -80,6 +85,39 @@ const page = () => {
     }
     setYearlyEarnings(yearlyEarn.toFixed(2));
     setResult(weeklyEarning.toFixed(2));
+
+    const data = {
+      labels: ["Monthly", "Yearly"],
+      datasets: [
+        {
+          label: "Monthly vs Yearly",
+          data: [yearlyEarn, weeklyEarning*4],
+          backgroundColor: ["rgb(255, 99, 132)", "rgb(54, 162, 235)"],
+          hoverOffset: 4,
+        },
+      ],
+    };
+
+    const options = {
+      plugins: {
+        legend: {
+          position: "bottom",
+        },
+      },
+    };
+
+    if (chartRef && chartRef.current) {
+      if (chartInstance.current) { // Add this block
+        chartInstance.current.destroy();
+      }
+
+      chartInstance.current = new Chart(chartRef.current.getContext('2d'), {
+        type: 'doughnut',
+        data: data,
+        options: options,
+      });
+    }
+
   }, [salaryAmount, pertime, hoursPerWeek, daysPerWeek, holidaysPerYear, unpaidVacationDays]);
   const clearbtn = () => {
     setSalaryAmount(0);
@@ -174,13 +212,16 @@ const page = () => {
       </div>
       <div className="p-4 w-96 h-[375px] bg-gray-100 rounded-lg shadow-md">
         <h1 className="text-2xl font-bold mb-4">Your Result</h1>
-        <div className="border  p-2 rounded bg-white flex flex-col">
-          <h1 className="text-2xl text-green-600 font-semibold p-3">
-            {result} , Monyhly Earning
-          </h1>
-          <h1 className="text-2xl text-purple-600 font-semibold p-3 ">
-            {yearlyEarnings} , Yearly Earning
-          </h1>
+        <div className="border  p-1 justify-center items-center rounded bg-white flex flex-col">
+        <h1 className="text-2xl text-green-600 font-semibold p-1 transition duration-500 ease-in-out transform hover:scale-110">
+          {result}, Weekly Earning
+        </h1>
+        <h1 className="text-2xl text-purple-600 font-semibold p-1 transition duration-500 ease-in-out transform hover:scale-110">
+          {yearlyEarnings}, Yearly Earning
+        </h1>
+          <div className="mt-4 flex items-center justify-center">
+          <canvas ref={chartRef} style={{ maxWidth:'180px',maxHeight:'180px'}}></canvas>
+          </div>
 
           <br />
         </div>

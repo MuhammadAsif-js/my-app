@@ -22,27 +22,33 @@ const Navbar = () => {
         </button>
       </div>
 
-      <ul className={`lg:flex ${showMenu ? 'flex' : 'hidden'} flex-col lg:flex-row gap-4`}>
-        <li>
-          <Link href="/" className="transition-all duration-500 ease-in-out transform hover:scale-110 text-lg font-bold p-2 rounded">Home</Link>
-        </li>
+      <ul className={`lg:flex ${showMenu ? 'flex' : 'hidden'} flex-col lg:flex-row gap-4`} style={{ listStyle: 'none' }}>
+  <li>
+    <Link href="/" className="menu-link text-lg font-bold p-2 rounded transition-transform duration-300 ease-in-out transform hover:scale-110 inline-block">Home</Link>
+  </li>
 
-        <li>
-          <Link href="/" className="transition-all duration-500 ease-in-out transform hover:scale-110 text-lg font-bold p-2 rounded">Calculators</Link>
-        </li>
+  {/* <li>
+    <Link href="/" className="menu-link text-lg font-bold p-2 rounded transition-transform duration-300 ease-in-out transform hover:scale-110 inline-block">Calculators</Link>
+  </li> */}
 
-        <li>
-          <Link href="/" className="transition-all duration-500 ease-in-out transform hover:scale-110 text-lg font-bold p-2 rounded">Future View</Link>
-        </li>
+  <li>
+    <Link href="/" className="menu-link text-lg font-bold p-2 rounded transition-transform duration-300 ease-in-out transform hover:scale-110 inline-block">Contact Us</Link>
+  </li>
+  
+  <li>
+    <Link href="/" className="menu-link text-lg font-bold p-2 rounded transition-transform duration-300 ease-in-out transform hover:scale-110 inline-block">Privacy Policy</Link>
+  </li>
 
-        {/* <li className="lg:hidden">
-          <Link href="/" className="transition-all duration-500 ease-in-out transform hover:scale-110 text-lg font-bold p-2 rounded">Contact us</Link>
-        </li>
+  <li>
+    <Link href="/" className="menu-link text-lg font-bold p-2 rounded transition-transform duration-300 ease-in-out transform hover:scale-110 inline-block">Improve</Link>
+  </li>
 
-        <li className="lg:hidden">
-          <Link href="/" className="transition-all duration-500 ease-in-out transform hover:scale-110 text-lg font-bold p-2 rounded">Privacy policy</Link>
-        </li> */}
-      </ul>
+  <li>
+    <Link href="/" className="menu-link text-lg font-bold p-2 rounded transition-transform duration-300 ease-in-out transform hover:scale-110 inline-block">Future View</Link>
+  </li>
+</ul>
+
+
     </nav>
   );
 };

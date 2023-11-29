@@ -13,13 +13,14 @@ import interestcal from "../Image/intrest_cal.jpg";
 import salarycal from "../Image/salary.png";
 import periodcal from "../Image/periods.jpg";
 import speedtest from "../Image/wifi.jpg";
-import tipcalculator from "../Image/tipcal.png";
+import fuelcalculator from "../Image/fuel_cal.jpg";
+import puppyweightcal from "../Image/puppy_cal.jpg";
 
 export default function Home() {
   return (
     //Add filters for different calculators
     <main className="flex justify-center items-center flex-wrap bg-blue-100 py-2 h-auto">
-      <div className="lg:w-1/4 md:w-1/2 sm:w-full max-w-xs m-4 p-4 bg-purple-100 rounded-lg shadow-md hover:shadow-lg animate-scale transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center cursor-pointer  hover:bg-purple-200 hover:scale-105">
+      {/* <div className="lg:w-1/4 md:w-1/2 sm:w-full max-w-xs m-4 p-4 bg-purple-100 rounded-lg shadow-md hover:shadow-lg animate-scale transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center cursor-pointer  hover:bg-purple-200 hover:scale-105">
         <Image
           src={idealweight}
           alt="Picture of the author"
@@ -33,7 +34,7 @@ export default function Home() {
         <button className="mt-4 bg-pink-500 text-white font-bold px-4 py-2 hover:bg-pink-700 scale-110 transition-colors duration-200 ease-in-out rounded animate-pulse hover:shadow-lg hover:scale-105">
           <Link href="./Tools/Idealweight">Calculate</Link>
         </button>
-      </div>
+      </div> */}
       <div className="lg:w-1/4 md:w-1/2 sm:w-full max-w-xs m-4 p-4 bg-purple-100 rounded-lg shadow-md hover:shadow-lg animate-scale transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center cursor-pointer  hover:bg-purple-200 hover:scale-105">
         <Image
           src={bmicalculator}
@@ -55,7 +56,7 @@ export default function Home() {
           <Link href="">Calculate</Link>
         </button> */}
       </div>
-      <div className="lg:w-1/4 md:w-1/2 sm:w-full max-w-xs m-4 p-4 bg-purple-100 rounded-lg shadow-md hover:shadow-lg animate-scale transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center cursor-pointer  hover:bg-purple-200 hover:scale-105">
+      {/* <div className="lg:w-1/4 md:w-1/2 sm:w-full max-w-xs m-4 p-4 bg-purple-100 rounded-lg shadow-md hover:shadow-lg animate-scale transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center cursor-pointer  hover:bg-purple-200 hover:scale-105">
         <Image
           src={clockimage}
           alt="Picture of the author"
@@ -69,7 +70,7 @@ export default function Home() {
         <button className="mt-4 bg-pink-500 text-white font-bold px-4 py-2 hover:bg-pink-700 scale-110 transition-colors duration-200 ease-in-out rounded animate-pulse hover:shadow-lg hover:scale-105">
           <Link href="./Tools/Timecal">Calculate</Link>
         </button>
-      </div>
+      </div> */}
       <div className="lg:w-1/4 md:w-1/2 sm:w-full max-w-xs m-4 p-4 bg-purple-100 rounded-lg shadow-md hover:shadow-lg animate-scale transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center cursor-pointer  hover:bg-purple-200 hover:scale-105">
         <Image
           src={passwordimage}
@@ -109,10 +110,10 @@ export default function Home() {
           height={80}
         />
         <p className="text-gray-800 font-semibold text-md mt-4 transition-all duration-500 ease-in-out transform hover:scale-105">
-          Scientific calculator for all your complex calculations.
+          General sales tax is calculated with ease.
         </p>
         <button className="mt-4 bg-pink-500 text-white font-bold px-4 py-2 hover:bg-pink-700 scale-110 transition-colors duration-200 ease-in-out rounded animate-pulse hover:shadow-lg hover:scale-105">
-          <Link href="./Tools/scientificcal">Calculate</Link>
+          <Link href="./Tools/gstcalculator">Calculate</Link>
         </button>
       </div>
       <div className="lg:w-1/4 md:w-1/2 sm:w-full max-w-xs m-4 p-4 bg-purple-100 rounded-lg shadow-md hover:shadow-lg animate-scale transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center cursor-pointer  hover:bg-purple-200 hover:scale-105">
@@ -147,6 +148,21 @@ export default function Home() {
       </div>
       <div className="lg:w-1/4 md:w-1/2 sm:w-full max-w-xs m-4 p-4 bg-purple-100 rounded-lg shadow-md hover:shadow-lg animate-scale transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center cursor-pointer  hover:bg-purple-200 hover:scale-105">
         <Image
+          src={interestcal}
+          alt="Picture of the author"
+          className="rounded-full border-2 border-pink-500 hover:border-pink-700 transition-all duration-500 ease-in-out transform hover:scale-110"
+          width={80}
+          height={80}
+        />
+        <p className="text-gray-800 font-semibold text-md mt-4 transition-all duration-500 ease-in-out transform hover:scale-105">
+          Calculate Compound Interest with ease.
+        </p>
+        <button className="mt-4 bg-pink-500 text-white font-bold px-4 py-2 hover:bg-pink-700 scale-110 transition-colors duration-200 ease-in-out rounded animate-pulse hover:shadow-lg hover:scale-105">
+          <Link href="./Tools/cominterest">Calculate</Link>
+        </button>
+      </div>
+      {/* <div className="lg:w-1/4 md:w-1/2 sm:w-full max-w-xs m-4 p-4 bg-purple-100 rounded-lg shadow-md hover:shadow-lg animate-scale transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center cursor-pointer  hover:bg-purple-200 hover:scale-105">
+        <Image
           src={salarycal}
           alt="Picture of the author"
           className="rounded-full border-2 border-pink-500 hover:border-pink-700 transition-all duration-500 ease-in-out transform hover:scale-110"
@@ -159,8 +175,8 @@ export default function Home() {
         <button className="mt-4 bg-pink-500 text-white font-bold px-4 py-2 hover:bg-pink-700 scale-110 transition-colors duration-200 ease-in-out rounded animate-pulse hover:shadow-lg hover:scale-105">
           <Link href="./Tools/Salarycal">Calculate</Link>
         </button>
-      </div>
-      <div className="lg:w-1/4 md:w-1/2 sm:w-full max-w-xs m-4 p-4 bg-purple-100 rounded-lg shadow-md hover:shadow-lg animate-scale transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center cursor-pointer  hover:bg-purple-200 hover:scale-105">
+      </div> */}
+      {/* <div className="lg:w-1/4 md:w-1/2 sm:w-full max-w-xs m-4 p-4 bg-purple-100 rounded-lg shadow-md hover:shadow-lg animate-scale transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center cursor-pointer  hover:bg-purple-200 hover:scale-105">
         <Image
           src={periodcal}
           alt="Picture of the author"
@@ -174,8 +190,8 @@ export default function Home() {
         <button className="mt-4 bg-pink-500 text-white font-bold px-4 py-2 hover:bg-pink-700 scale-110 transition-colors duration-200 ease-in-out rounded animate-pulse hover:shadow-lg hover:scale-105">
           <Link href="./Tools/periodcal">Calculate</Link>
         </button>
-      </div>
-      <div className="lg:w-1/4 md:w-1/2 sm:w-full max-w-xs m-4 p-4 bg-purple-100 rounded-lg shadow-md hover:shadow-lg animate-scale transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center cursor-pointer  hover:bg-purple-200 hover:scale-105">
+      </div> */}
+      {/* <div className="lg:w-1/4 md:w-1/2 sm:w-full max-w-xs m-4 p-4 bg-purple-100 rounded-lg shadow-md hover:shadow-lg animate-scale transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center cursor-pointer  hover:bg-purple-200 hover:scale-105">
         <Image
           src={speedtest}
           alt="Picture of the author"
@@ -189,22 +205,37 @@ export default function Home() {
         <button className="mt-4 bg-pink-500 text-white font-bold px-4 py-2 hover:bg-pink-700 scale-110 transition-colors duration-200 ease-in-out rounded animate-pulse hover:shadow-lg hover:scale-105">
           <Link href="./Tools/speedtest">Check</Link>
         </button>
-      </div>
+      </div> */}
       <div className="lg:w-1/4 md:w-1/2 sm:w-full max-w-xs m-4 p-4 bg-purple-100 rounded-lg shadow-md hover:shadow-lg animate-scale transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center cursor-pointer  hover:bg-purple-200 hover:scale-105">
         <Image
-          src={tipcalculator}
+          src={fuelcalculator}
           alt="Picture of the author"
           className="rounded-full border-2 border-pink-500 hover:border-pink-700 transition-all duration-500 ease-in-out transform hover:scale-110"
           width={80}
           height={80}
         />
         <p className="text-gray-800 font-semibold text-md mt-4 transition-all duration-500 ease-in-out transform hover:scale-105">
-          Calculate your tip and split the bill with ease.
+          All type of fuel calculator in one place.
         </p>
         <button className="mt-4 bg-pink-500 text-white font-bold px-4 py-2 hover:bg-pink-700 scale-110 transition-colors duration-200 ease-in-out rounded animate-pulse hover:shadow-lg hover:scale-105">
-          <Link href="./Tools/tipcal">Calculate</Link>
+          <Link href="./Tools/fuelcal">Calculate</Link>
         </button>
       </div>
+      {/* <div className="lg:w-1/4 md:w-1/2 sm:w-full max-w-xs m-4 p-4 bg-purple-100 rounded-lg shadow-md hover:shadow-lg animate-scale transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center cursor-pointer  hover:bg-purple-200 hover:scale-105">
+        <Image
+          src={puppyweightcal}
+          alt="Picture of the author"
+          className="rounded-full border-2 border-pink-500 hover:border-pink-700 transition-all duration-500 ease-in-out transform hover:scale-110"
+          width={80}
+          height={80}
+        />
+        <p className="text-gray-800 font-semibold text-md mt-4 transition-all duration-500 ease-in-out transform hover:scale-105">
+          Calculate your puppy weight with ease.
+        </p>
+        <button className="mt-4 bg-pink-500 text-white font-bold px-4 py-2 hover:bg-pink-700 scale-110 transition-colors duration-200 ease-in-out rounded animate-pulse hover:shadow-lg hover:scale-105">
+          <Link href="./Tools/puppyweightcal">Calculate</Link>
+        </button>
+      </div> */}
     </main>
   );
 }

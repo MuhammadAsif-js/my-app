@@ -13,22 +13,6 @@ const Page = () => {
     console.log("Selected gender: ", event.target.value);
   };
 
-  
-
-  // const idealWeightCalculate = () => {
-  //   let heightInInches = Number(feet) * 12 + Number(inches); // Convert height to inches
-  //   console.log("Height in inches:", heightInInches);
-
-  //   let youridealweight = 0;
-  
-  //   if (gender === "male") {
-  //      youridealweight = (56.7 + 1.41 * (heightInInches - 60)).toFixed(2);
-  //   } else if (gender === "female") {
-  //      youridealweight = (53.1 + 1.36 * (heightInInches - 60)).toFixed(2);
-  //   }
-  //   setIdealweight(youridealweight);
-  // };
-
   useEffect(()=>{
   let heightInInches = Number(feet) * 12 + Number(inches); // Convert height to inches
     console.log("Height in inches:", heightInInches);
