@@ -19,3 +19,40 @@
 body {
   color: rgb(var(--foreground-rgb));
 }
+/* CSS */
+
+/* For mobile devices */
+@media (max-width: 600px) {
+  .px-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .text-justify {
+    width: 100%;
+  }
+}
+
+/* For tablet devices */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .px-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .text-justify {
+    width: 100%;
+  }
+}
+
+/* For desktop devices */
+@media (min-width: 1025px) {
+  .px-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .text-justify {
+    width: 1100px;
+  }
+}

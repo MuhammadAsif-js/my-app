@@ -63,7 +63,7 @@ const Page = () => {
   ]);
 
   return (
-    <article>
+    <article className="p-6 sm:w-screen md:w-screen w-screen h-screen sm:p-5">
       <div className="px-10 pt-3 pb-3">
         <h1 className="text-2xl font-bold">
           Password Generator Words with Qr code
@@ -80,8 +80,8 @@ const Page = () => {
           device, without the need to transmit it over the internet.
         </p>
       </div>
-      <section className="bg-white text-gray-800 h-80 flex justify-start gap-3 mx-10 mt-6 w-screen mb-9 sm:flex flex-wrap">
-        <div className="p-4 w-96 h-[340px] bg-gray-100 rounded-lg shadow-md">
+      <section className="flex flex-wrap justify-start items-center gap-3 mx-10 my-1 cursor-pointer sm:flex justify-center items-center">
+        <div className=" shadow-md rounded px-6 pt-4 pb-6 mb-6 flex flex-col my-2 w-[388px] bg-gray-100 sm:w-auto sm:">
           <h1 className="text-2xl font-bold mb-4 text-center">
             Password Generator
           </h1>
@@ -149,13 +149,13 @@ const Page = () => {
             </label>
           </div>
         </div>
-        <div className="p-4 w-96 h-[340px] bg-gray-100 rounded-lg shadow-md flex flex-col justify-center">
+        <div className="shadow-md rounded px-4 pt-4 pb-4 mb-4 flex flex-col my-2 h-80 bg-gray-100 w-[378px]">
           <h1 className=" text-2xl font-bold text-center">QR CODE</h1> <br />
           <div className="bg-white p-4 w-full h-full flex justify-center items-center">
             <QRCode value={password} size={140} />
           </div>
         </div>
-      </section>
+      </section> <br />
       <div className="px-10 py-4">
         <h2 className="text-2xl font-semibold">
           Importance of strong passwords

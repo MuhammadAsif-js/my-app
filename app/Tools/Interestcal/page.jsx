@@ -112,7 +112,7 @@ const Page = () => {
     compoundPeriodUnit,
   ]);
   return (
-    <article>
+    <article className="p-7 h-auto sm:p-10">
       <div className="px-10 pt-3 pb-3">
         <h1 className="text-2xl font-bold">Simple Interest Only Calculator</h1>
         <p className="py-2 text-justify w-[1100px] font-normal">
@@ -127,9 +127,9 @@ const Page = () => {
           calculations anymore – our tool does all the work for you.
         </p>
       </div>
-      <section className="bg-white text-gray-800 h-80 flex flex-wrap justify-start gap-3 mx-10 my-5 w-screen">
-        <div className=" p-4 w-96 h-[355px] bg-gray-100 rounded-lg shadow-md">
-          <h1 className="text-2xl font-bold mb-4">Interest Calculator</h1>
+      <section className="flex justify-center flex-wrap items-center m-10 cursor-pointer gap-3">
+        <div className="shadow-md rounded px-8 pt-6 max-h-[400px] pb-8 mb-4 flex flex-col my-2 w-96 bg-gray-100 sm:text-lg">
+          <p className="text-xl font-semibold mb-4">Interest Calculator</p>
           <label className="font-semibold" htmlFor="">
             Interest Type :{" "}
           </label>
@@ -244,22 +244,22 @@ const Page = () => {
             </div>
           )}
         </div>
-        <div className="p-4 w-96 h-[355px] bg-gray-100 rounded-lg shadow-md">
-          <p className="text-2xl font-bold mb-4">Your Result</p>
+        <div className="p-4 w-96 h-[295px] bg-gray-100 rounded-lg shadow-md sm:w-64 sm:text-sm">
+          {/* <p className="text-2xl font-bold mb-4">Your Result</p> */}
           <div className="border text-center rounded bg-white ">
             <p className="text-xl font-semibold p-1">
               {result} Interest , {principalAmount} principal
             </p>
             <br />
-            <div className="mt-4 flex items-center justify-center">
+            <div className="mt-4 flex items-center justify-center h-[140px]">
               <canvas
                 ref={chartRef}
-                style={{ maxWidth: "180px", maxHeight: "180px" }}
+                style={{ maxWidth: "160px", maxHeight: "160px" }}
               ></canvas>
             </div>
           </div>
-        </div>
-      </section>
+        </div> <br />
+      </section> <br />
       <div className="px-10 py-4">
         <h2 className="text-2xl font-semibold">
           How does simple interest work?

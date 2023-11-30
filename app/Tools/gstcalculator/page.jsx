@@ -51,8 +51,8 @@ const page = () => {
   }, [netprice, gst, grossprice, tax]);
 
   return (
-    <article>
-      <div className="px-10 pt-3 pb-3">
+    <article className="md:p-10 sm:p-6">
+    <div className="pt-3 pb-3">
         <h1 className="text-2xl font-bold">
           How to Use a Calculator for GST Calculations with Ease
         </h1>
@@ -69,8 +69,8 @@ const page = () => {
           determining the net price of goods or services.
         </p>
       </div>
-      <section className="flex flex-wrap justify-start items-center mx-10 my-1 cursor-pointer">
-        <div className=" shadow-md rounded px-6 pt-4 pb-6 mb-6 flex h-60 flex-col my-2 w-[388px] bg-gray-100">
+      <section className="flex justify-center flex-wrap items-center m-10 cursor-pointer gap-3">
+        <div className="shadow-md rounded px-8 pt-6 max-h-[400px] pb-8 mb-4 flex flex-col my-2 w-96 bg-gray-100 sm:text-lg">
           <div>
             <label className="" htmlFor="">
               Net price
@@ -79,7 +79,7 @@ const page = () => {
               type="number"
               defaultValue={netprice}
               onChange={(e) => setNetprice(+e.target.value)}
-              className="border border-gray-300 rounded-sm px-3 py-2 mb-4 text-gray-800 focus:outline-none focus:ring focus:border-blue-500 font-semibold text-2xl"
+              className="border border-gray-300 rounded-sm px-3 py-2 mb-4 text-gray-800 focus:outline-none focus:ring focus:border-blue-500 font-semibold text-2xl sm:text-xl sm:w-[220px]"
             />
           </div>
           <div>
@@ -89,14 +89,14 @@ const page = () => {
               defaultValue={gst}
               placeholder="%"
               onChange={(e) => setGst(+e.target.value)}
-              className="border border-gray-300 rounded-sm px-3 py-2 mb-4 text-gray-800 focus:outline-none focus:ring focus:border-blue-500 font-semibold text-2xl"
+              className="border border-gray-300 rounded-sm px-3 py-2 mb-4 text-gray-800 focus:outline-none focus:ring focus:border-blue-500 font-semibold text-2xl sm:text-xl sm:w-[220px]"
             />
           </div>
         </div>
-        <div className="flex flex-wrap justify-center w-[400px] items-center m-3 cursor-pointer">
+        <div className="flex flex-wrap justify-center w-[400px] items-center m-3 cursor-pointer sm:w-[280px] sm:text-xl">
           <div className="shadow-md rounded px-4 pt-4 pb-4 mb-4 flex flex-col my-2 h-60 bg-gray-100 w-[378px]">
             <div className="border text-xl font-semibold px-2 py-2 text-center m-1 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-              Gross price : {grossprice} tax : {tax}
+              G price : {grossprice} tax : {tax}
             </div>
             <div className="mt-4 flex items-center justify-center">
               <canvas

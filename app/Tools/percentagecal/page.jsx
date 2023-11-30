@@ -37,13 +37,13 @@ const page = () => {
   };
 
   return (
-    <article>
-      <div className="px-10 pt-3 pb-3">
-        <h1 className="text-2xl font-bold">
+    <article className="w-full h-auto bg-gray-100 p-4 sm:p-6 md:p-5 lg:p-6 xl:p-10">
+      <div className="pt-3 pb-3">
+        <h1 className="text-xl sm:text-2xl font-semibold mb-4">
           Ultimate Percentage Increase Calculator: Simplifying Complex Math
           Equations
         </h1>
-        <p className="py-2 text-justify w-[1100px] font-normal">
+        <p className="text-base sm:text-lg mb-8 text-justify">
           Are you tired of struggling with complex math equations to calculate
           percentage increase? Look no further! Introducing the Ultimate
           Percentage Increase Calculator, the tool that simplifies even the most
@@ -55,8 +55,8 @@ const page = () => {
           percentage increase without having to worry about the math behind it.
         </p>
       </div>
-      <section className="flex flex-wrap justify-start px-10 mt-10 h-auto gap-3">
-        <div className="p-4 w-[450px] h-[200px] bg-gray-100 rounded-sm shadow-md">
+      <section className="flex flex-col sm:flex-row justify-start items-center mx-auto max-w-7xl mt-8 sm:items-center">
+      <div className="shadow-md rounded p-4 mb-8 sm:mb-0 sm:mr-8 bg-white w-full sm:w-[400px] md:w-[450px] lg:w-[500px]">
           <div>
             <span className="text-gray-700 font-semibold text-lg">
               What is{" "}
@@ -80,8 +80,7 @@ const page = () => {
               <span>
                 {" "}
                 <button
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold
-               py-1 px-2 rounded-sm focus:outline-none animate-pulse focus:ring-4 focus:ring-blue-300 m-2"
+                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-sm focus:outline-none animate-pulse focus:ring-4 focus:ring-blue-300 m-2"
                   onClick={calcone}
                 >
                   Calculate
@@ -129,8 +128,7 @@ const page = () => {
               />
               <span className="px-1">of what</span>
               <button
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold
-             py-1 rounded-sm focus:outline-none animate-pulse focus:ring-4 focus:ring-blue-300 m-2 px-2"
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 rounded-sm focus:outline-none animate-pulse focus:ring-4 focus:ring-blue-300 m-2 px-2"
                 onClick={calcthree}
               >
                 Calculate
@@ -139,14 +137,14 @@ const page = () => {
           </div>
         </div>
         {/* result */}
-        <div className="px-3  h-[200px] w-[280px] bg-gray-100 pt-5 pb-5 rounded-sm shadow-md">
-          <div className="bg-white p-2 font-semibold m-1 text-xl">
+        <div className="px-3  md:w-[280px] bg-gray-100 pt-5 pb-5 rounded-sm shadow-md">
+          <div className="bg-white p-2 font-semibold m-1 text-xl overflow-x-auto">
             {resultone}
           </div>
-          <div className="bg-white p-2 font-semibold m-1 text-xl">
+          <div className="bg-white p-2 font-semibold m-1 text-xl overflow-x-auto">
             {resulttwo}
           </div>
-          <div className="bg-white p-2 font-semibold m-1 text-xl">
+          <div className="bg-white p-2 font-semibold m-1 text-xl overflow-x-auto">
             {resultthree}
           </div>
         </div>
@@ -167,7 +165,9 @@ const page = () => {
         for investors, financial analysts, and individuals navigating the
         complexities of monetary growth.
       </p>
-      <h2 className="text-2xl font-semibold  px-10 pt-5">Aiding Academic Pursuits</h2>
+      <h2 className="text-2xl font-semibold  px-10 pt-5">
+        Aiding Academic Pursuits
+      </h2>
       <p className="py-2 text-justify w-[1100px] font-normal px-10 pt-5">
         Education forms the bedrock of society, and mathematical concepts,
         including percentage increase, are fundamental in academic curricula.

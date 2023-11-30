@@ -155,8 +155,8 @@ const Page = () => {
   ]);
 
   return (
-    <article>
-      <div className="px-20 pt-5 pb-1">
+    <article className="h-screen">
+      <div className="p-5 pt-5 pb-1">
         <h1 className="text-2xl font-bold pb-1">
           Gas Cost Calculators: The Ultimate Tool for Budget-Conscious Drivers
         </h1>
@@ -173,8 +173,8 @@ const Page = () => {
           much you're spending on gas.
         </p>
       </div>
-      <section className="bg-white text-gray-800 h-80 flex justify-start px-20 gap-3 mt-10 w-screen sm:flex flex-wrap">
-        <div className="p-4 w-[480px] h-[300px] bg-gray-100 rounded-lg shadow-md">
+      <section className="flex justify-center flex-wrap items-center m-10 cursor-pointer gap-3">
+        <div className="shadow-md rounded px-8 pt-6 max-h-[400px] pb-8 mb-4 flex flex-col my-2 w-96 bg-gray-100 sm:text-lg">
           <div className="mb-4">
             <label
               htmlFor="tripDistance"
@@ -290,7 +290,7 @@ const Page = () => {
         /> */}
         </div>
 
-        <div className="p-4 w-96 h-[300px] bg-gray-100 rounded-lg shadow-md">
+        <div className="shadow-md rounded px-4 pt-4 pb-4  flex flex-col my-2 h-68 bg-gray-100 w-[378px]">
           <h1 className="text-2xl font-semibold mb-4">Results: {total} $</h1>
           <div className="mt-4 flex items-center justify-center">
             <canvas
@@ -305,8 +305,8 @@ const Page = () => {
         <canvas ref={chartRef} style={{ maxWidth:'180px',maxHeight:'180px'}}></canvas>
         </div> */}
         </div>
-      </section>
-      <div className="px-10 py-4">
+      </section> <br />
+      <div className=" w-screen h-screen p-5">
         <h2 className="text-2xl px-10 font-semibold">
           Gas Cost Calculators: The Ultimate Tool for Budget-Conscious Drivers
         </h2>

@@ -103,7 +103,7 @@ const page = () => {
   };
 
   return (
-    <article>
+    <article className="md:p-5 w-screen h-screen sm:p-5 ">
       <div className="px-10 pt-3 pb-3">
         <h1 className="text-2xl font-bold">NHS BMI Calculator Uk</h1>
         <p className="py-2 text-justify w-[1100px] font-normal">
@@ -118,23 +118,22 @@ const page = () => {
           well-being.{" "}
         </p>
       </div>
-      <section className="flex flex-wrap justify-start items-center mx-10 my-1 cursor-pointer">
-        <div className=" shadow-md rounded px-6 pt-4 pb-6 mb-6 flex flex-col my-2 w-[388px] bg-gray-100">
-          {/* <h1 className="font-bold text-xl text-red-600">BMI CALCULATOR</h1> */}
+      <section className="flex justify-center flex-wrap items-center m-10 cursor-pointer gap-3">
+        <div className="shadow-md rounded px-8 pt-6 max-h-[400px] pb-8 mb-4 flex flex-col my-2 w-96 bg-gray-100 sm:text-lg">
           <div>
             <div className="flex items-center my-4">
               <label
                 htmlFor=""
                 className="block text-gray-700 font-bold mb-2 text-lg mr-1"
               >
-                Age :
+                Age 
               </label>
               <input
                 type="number"
                 value={age}
                 placeholder="Your Age"
                 onChange={(e) => setAge(e.target.value)}
-                className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-auto"
+                className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-auto "
               />
               <span className="text-gray-600 p-4 font-semibold text-md">
                 2-90
@@ -145,7 +144,7 @@ const page = () => {
                 htmlFor=""
                 className="text-gray-700 text-lg font-bold mr-2"
               >
-                Gender :
+                Gender 
               </label>
               <input
                 type="radio"
@@ -175,7 +174,7 @@ const page = () => {
                 htmlFor=""
                 className="text-gray-700 text-lg font-bold mr-2"
               >
-                Height : {""}
+                Height  {""}
               </label>
               <input
                 type="number"
@@ -217,8 +216,8 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap justify-center w-[400px] items-center m-3 cursor-pointer">
-          <div className="shadow-md rounded px-4 pt-4 pb-4 mb-4 flex flex-col my-2 h-80 bg-gray-100 w-[378px]">
+        <div className="shadow-lg rounded-md p-3 my-2 h-[380px] bg-gradient-to-b from-gray-200 to-gray-300 w-96">
+          <div className="shadow-md rounded px-4 pt-4 pb-4 mb-4 flex flex-col my-2 h-70 bg-gray-100 w-[348px]">
             {/* <h1 className="font-bold text-xl mb-2">Result:</h1> */}
             <table className="table-auto">
               <tbody>

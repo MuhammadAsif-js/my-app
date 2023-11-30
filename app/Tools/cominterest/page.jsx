@@ -87,8 +87,8 @@ const page = () => {
           with an accurate estimate of the future value of your investment.
         </p>
       </div>
-      <section className="flex flex-wrap justify-start items-center mx-10 my-1 cursor-pointer">
-        <div className=" shadow-md rounded px-6 pt-4 pb-6 mb-6 flex flex-col h-[270px] my-2 w-[388px] bg-gray-100">
+      <section className="flex justify-center flex-wrap items-center m-10 cursor-pointer gap-3">
+        <div className="shadow-md rounded px-8 pt-6 max-h-[400px] pb-8 mb-4 flex flex-col my-2 w-96 bg-gray-100 sm:text-lg">
           <div className="flex flex-wrap items-center justify-between mb-3">
             <label
               htmlFor="initialLumpSum"
@@ -150,7 +150,7 @@ const page = () => {
             />
           </div>
         </div>
-        <div className="flex flex-wrap justify-center w-[400px] items-center m-3 cursor-pointer">
+        <div className="flex flex-wrap justify-center w-[400px] items-center m-3 cursor-pointer sm:w-[230px] sm:text-base">
           <div className="shadow-md rounded px-4 pt-4 pb-4 mb-4 flex flex-col my-2 h-[270px] bg-gray-100 w-[378px]">
             <p className="text-center font-semibold text-2xl">
               Future Value : {""}

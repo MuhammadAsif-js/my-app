@@ -127,8 +127,8 @@ const page = () => {
   }, [age, feet, inches, gender, weight, activity]);
 
   return (
-    <article>
-      <div className="px-10 pt-3 pb-3">
+    <article className="p-8">
+      <div className="pt-3 pb-3">
         <h1 className="text-2xl font-bold">
           How to Use a Calorie Calculator to Make Healthier Sub Choices at
           Subway
@@ -148,14 +148,14 @@ const page = () => {
         </p>
       </div>
       <section className="flex justify-center flex-wrap items-center m-10 cursor-pointer gap-3">
-        <div className="shadow-md rounded px-8 pt-6 max-h-[400px] pb-8 mb-4 flex flex-col my-2 w-96 bg-gray-100">
-          <h1 className="font-bold text-xl text-red-600">Calorie Counter</h1>
+        <div className="shadow-md rounded px-8 pt-6 max-h-[400px] pb-8 mb-4 flex flex-col my-2 w-96 bg-gray-100 sm:text-lg">
+          <p className="font-bold text-xl text-red-600">Calorie Counter</p>
           <div className="flex items-center ">
             <label
               htmlFor=""
-              className="block text-gray-700 font-bold mb-2 text-lg mr-1"
+              className="block text-gray-700 font-bold mb-2 text-lg mr-1 sm:text-base"
             >
-              Age :
+              Age 
             </label>
             <input
               type="number"
@@ -242,18 +242,18 @@ const page = () => {
             <option value="ExtremelyActive">Extremely Active</option>
           </select>
           <div className="flex items-center justify-center mt-4">
-            <button
+            {/* <button
               className="bg-red-500 hover:bg-red-700 text-white 
         font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline
-         animate-scale hover:animate-pulse"
+         animate-scale hover:animate-pulse sm:hidden"
               onClick={clearbtn}
             >
               Clear
-            </button>
+            </button> */}
           </div>
         </div>
         <div className="shadow-lg rounded-md p-3 my-2 h-[400px] bg-gradient-to-b from-gray-200 to-gray-300 w-96">
-          <h1 className="font-bold text-2xl mb-4 text-center">Result</h1>
+          <p className="font-bold text-2xl mb-4 text-center">Result</p>
           <div className="overflow-y-auto bg-white rounded-sm">
             <div className="w-full table-fixed rounded-sm">
               <div className="border py-3 px-4 text-gray-800 font-medium rounded-md shadow-md text-xl text-center">
