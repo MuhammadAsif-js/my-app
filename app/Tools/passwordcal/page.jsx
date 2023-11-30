@@ -80,7 +80,7 @@ const Page = () => {
           device, without the need to transmit it over the internet.
         </p>
       </div>
-      <section className="flex flex-wrap justify-start items-center gap-3 mx-10 my-1 cursor-pointer sm:flex justify-center items-center">
+      <section className="flex flex-wrap  items-center gap-3 mx-10 my-1 cursor-pointer sm:flex justify-center ">
         <div className=" shadow-md rounded px-6 pt-4 pb-6 mb-6 flex flex-col my-2 w-[388px] bg-gray-100 sm:w-auto sm:">
           <h1 className="text-2xl font-bold mb-4 text-center">
             Password Generator
