@@ -54,7 +54,7 @@ const page = () => {
     <article>
       <div className="px-10 pt-3 pb-3">
         <h1 className="text-2xl font-bold">
-          How to Use a Calculator for GST Calculations with Ease has done
+          How to Use a Calculator for GST Calculations with Ease
         </h1>
         <p className="py-2 text-justify w-[1100px] font-normal">
           Are you struggling with GST calculations? Don't worry, we've got you
