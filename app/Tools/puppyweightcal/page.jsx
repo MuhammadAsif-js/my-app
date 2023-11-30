@@ -1,4 +1,16 @@
-// "use client";
+"use client";
+import React from 'react'
+
+const page = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default page
+
 // import React, { useState, useEffect, useRef } from "react";
 // import { Chart, registerables } from "chart.js";
 
@@ -215,14 +227,4 @@
 // };
 
 // export default page;
-import React from 'react'
 
-const page = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default page
