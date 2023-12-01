@@ -21,7 +21,6 @@ export default function Home() {
     //Add filters for different calculators
     <main className="flex justify-center items-center flex-wrap bg-blue-100 py-2
      h-auto">
-      <h1>vercel production is working</h1>
       {/* <div className="lg:w-1/4 md:w-1/2 sm:w-full max-w-xs m-4 p-4 bg-purple-100 rounded-lg shadow-md hover:shadow-lg animate-scale transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center cursor-pointer  hover:bg-purple-200 hover:scale-105">
         <Image
           src={idealweight}
