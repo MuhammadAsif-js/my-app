@@ -1,4 +1,5 @@
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './Navbar/page';
 import './globals.css';
 
@@ -14,6 +15,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => (
     <body>
       <Navbar />
       {children}
+      <Analytics/>
     </body>
   </html>
 );
