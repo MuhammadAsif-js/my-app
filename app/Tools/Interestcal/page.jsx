@@ -112,7 +112,7 @@ const Page = () => {
     compoundPeriodUnit,
   ]);
   return (
-    <article className="p-7 h-auto sm:p-10">
+    <article className="p-7 h-auto sm:p-10 text-black">
       <div className="px-10 pt-3 pb-3">
         <h1 className="text-2xl font-bold">Simple Interest Only Calculator</h1>
         <p className="py-2 text-justify w-[1100px] font-normal">

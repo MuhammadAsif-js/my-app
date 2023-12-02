@@ -103,7 +103,7 @@ const page = () => {
   };
 
   return (
-    <article className="md:p-5 w-screen h-screen sm:p-5 ">
+    <article className="md:p-5 w-screen h-screen sm:p-5 text-black">
       <div className="px-10 pt-3 pb-3">
         <h1 className="text-2xl font-bold">NHS BMI Calculator Uk</h1>
         <p className="py-2 text-justify w-[1100px] font-normal">

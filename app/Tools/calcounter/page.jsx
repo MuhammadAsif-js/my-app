@@ -127,7 +127,7 @@ const page = () => {
   }, [age, feet, inches, gender, weight, activity]);
 
   return (
-    <article className="p-8">
+    <article className="p-8 text-black">
       <div className="pt-3 pb-3">
         <h1 className="text-2xl font-bold">
           How to Use a Calorie Calculator to Make Healthier Sub Choices at

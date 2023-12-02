@@ -155,7 +155,7 @@ const Page = () => {
   ]);
 
   return (
-    <article className="h-screen">
+    <article className="h-screen text-black">
       <div className="p-5 pt-5 pb-1">
         <h1 className="text-2xl font-bold pb-1">
           Gas Cost Calculators: The Ultimate Tool for Budget-Conscious Drivers

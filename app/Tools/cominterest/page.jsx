@@ -69,7 +69,7 @@ const page = () => {
     addInterest,
   ]);
   return (
-    <article>
+    <article className="text-black">
       <div className="px-10 pt-3 pb-3">
         <h1 className="text-2xl font-bold">
           {" "}

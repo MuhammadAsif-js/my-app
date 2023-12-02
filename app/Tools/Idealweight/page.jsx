@@ -48,9 +48,9 @@ const Page = () => {
   return (
     <div className="bg-white flex justify-center items-center text-gray-800 gap-3 mt-10 w-screen h-auto flex-wrap sm:flex-wrap">
       <div className="shadow-md rounded px-8 pt-6 pb-8 mb-4 h-[308px] my-2 w-96 bg-gray-100">
-        <h1 className="font-bold text-xl text-red-600 mb-2">
+        <p className="font-bold text-xl text-red-600 mb-2">
           IDEAL WEIGHT CHECK
-        </h1>
+        </p>
         <div>
           <label htmlFor="" className="block text-gray-700 text-sm font-bold mb-2">
             Age:

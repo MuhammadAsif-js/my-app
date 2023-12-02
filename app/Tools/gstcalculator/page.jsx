@@ -51,7 +51,7 @@ const page = () => {
   }, [netprice, gst, grossprice, tax]);
 
   return (
-    <article className="md:p-10 sm:p-6">
+    <article className="md:p-10 sm:p-6 text-black">
     <div className="pt-3 pb-3">
         <h1 className="text-2xl font-bold">
           How to Use a Calculator for GST Calculations with Ease

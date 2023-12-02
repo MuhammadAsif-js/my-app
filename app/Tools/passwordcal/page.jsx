@@ -63,7 +63,7 @@ const Page = () => {
   ]);
 
   return (
-    <article className="p-6 sm:w-screen md:w-screen w-screen h-screen sm:p-5">
+    <article className="p-6 sm:w-screen md:w-screen w-screen h-screen sm:p-5 text-black">
       <div className="px-10 pt-3 pb-3">
         <h1 className="text-2xl font-bold">
           Password Generator Words with Qr code

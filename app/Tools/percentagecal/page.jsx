@@ -37,7 +37,7 @@ const page = () => {
   };
 
   return (
-    <article className="w-full h-auto bg-gray-100 p-4 sm:p-6 md:p-5 lg:p-6 xl:p-10">
+    <article className="w-full h-auto bg-gray-100 p-4 sm:p-6 md:p-5 lg:p-6 xl:p-10 text-black">
       <div className="pt-3 pb-3">
         <h1 className="text-xl sm:text-2xl font-semibold mb-4">
           Ultimate Percentage Increase Calculator: Simplifying Complex Math
