@@ -1,4 +1,5 @@
 "use client";
+import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import idealweight from "../Image/weightmeasure.jpg";
@@ -16,11 +17,19 @@ import speedtest from "../Image/wifi.jpg";
 import fuelcalculator from "../Image/fuel_cal.jpg";
 import puppyweightcal from "../Image/puppy_cal.jpg";
 
+// export const metadata = {
+//   title: "our calculators Home",
+//   description:
+//     "Our calculators provide wide range of calculators to perform your day to day tasks effeciently",
+// };
+
 export default function Home() {
   return (
     //Add filters for different calculators
-    <main className="flex justify-center items-center flex-wrap bg-blue-100 py-2
-     h-auto">
+    <main
+      className="flex justify-center items-center flex-wrap bg-blue-100 py-2
+     h-auto"
+    >
       {/* <div className="lg:w-1/4 md:w-1/2 sm:w-full max-w-xs m-4 p-4 bg-purple-100 rounded-lg shadow-md hover:shadow-lg animate-scale transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center cursor-pointer  hover:bg-purple-200 hover:scale-105">
         <Image
           src={idealweight}
@@ -141,7 +150,7 @@ export default function Home() {
           height={80}
         />
         <p className="text-gray-800 font-semibold text-md mt-4 transition-all duration-500 ease-in-out transform hover:scale-105">
-          Calculate simple  interest with ease.
+          Calculate simple interest with ease.
         </p>
         <button className="mt-4 bg-pink-500 text-white font-bold px-4 py-2 hover:bg-pink-700 scale-110 transition-colors duration-200 ease-in-out rounded animate-pulse hover:shadow-lg hover:scale-105">
           <Link href="./Tools/Interestcal">Calculate</Link>
