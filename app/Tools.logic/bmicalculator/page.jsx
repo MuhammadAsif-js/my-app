@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import { Chart, registerables } from "chart.js";
-import { NextSeo } from 'next-seo';
 
 
 Chart.register(...registerables);
