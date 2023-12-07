@@ -4,7 +4,7 @@ import SimpleInterest from "./../../Tools.logic/simpleinterest/page";
 const page = () => {
   return (
     <>
-      <article className="mx-auto mt-1 p-6 lg:px-12 md:px-8 sm:px-6  bg-white rounded shadow-lg">
+      <article className=" text-black mx-auto mt-1 p-6 lg:px-12 md:px-8 sm:px-6  bg-white rounded shadow-lg">
         <div>
           <h1 className="text-2xl md:text-3xl lg:text-3xl font-semibold mb-4">
           Simple Interest Only Calculator

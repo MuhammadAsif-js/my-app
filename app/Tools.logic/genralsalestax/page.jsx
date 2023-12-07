@@ -52,34 +52,32 @@ const page = () => {
 
   return (
       <section className="flex text-black justify-center flex-wrap items-center m-4 cursor-pointer gap-3">
-        <div className="shadow-md rounded px-8 pt-6 max-h-[300px] pb-8 mb-4 flex flex-col my-2 w-60 bg-gray-100 sm:text-lg">
-          <div>
-            <label className="" htmlFor="">
-              Net price
-            </label>
-            <input
-              type="number"
-              defaultValue={netprice}
-              onChange={(e) => setNetprice(+e.target.value)}
-              className="border border-gray-300 rounded-sm px-3 py-2 mb-4 text-gray-800 focus:outline-none focus:ring
-               focus:border-blue-500 font-semibold text-2xl 
-               sm:text-xl sm:w-[180px] md:w-[170px] lg:[240px]"
-            />
-          </div>
-          <div>
-            <label htmlFor="">GST %</label>
-            <input
-              type="number"
-              defaultValue={gst}
-              placeholder="%"
-              onChange={(e) => setGst(+e.target.value)}
-              className="border border-gray-300 rounded-sm px-3 py-2 mb-4 text-gray-800 focus:outline-none focus:ring
-               focus:border-blue-500 font-semibold text-2xl 
-               sm:text-xl sm:w-[180px] md:w-[170px] lg:[240px]"
-            />
-          </div>
-        </div>
-        <div className="flex flex-wrap justify-center w-[400px] items-center m-3 cursor-pointer sm:w-[280px] sm:text-xl">
+<div className="shadow-md rounded px-8 pt-6 max-h-[300px] pb-8 mb-4 flex flex-col my-2 w-full sm:w-80 bg-gray-100 sm:text-lg">
+  <div>
+    <label className="" htmlFor="">
+      Net price
+    </label>
+    <input
+      type="number"
+      defaultValue={netprice}
+      onChange={(e) => setNetprice(+e.target.value)}
+      className="border border-gray-300 rounded-sm px-3 py-2 mb-4 text-gray-800 focus:outline-none focus:ring focus:border-blue-500 font-semibold text-2xl sm:text-xl w-full"
+    />
+  </div>
+  <div>
+    <label htmlFor="">GST %</label>
+    <input
+      type="number"
+      defaultValue={gst}
+      placeholder="%"
+      onChange={(e) => setGst(+e.target.value)}
+      className="border border-gray-300 rounded-sm px-3 py-2 mb-4 text-gray-800 focus:outline-none focus:ring focus:border-blue-500 font-semibold text-2xl sm:text-xl w-full"
+    />
+  </div>
+</div>
+
+        <div className="flex flex-wrap justify-center w-[300px] 
+        items-center m-3 cursor-pointer sm:w-[280px] sm:text-xl">
           <div className="shadow-md rounded px-4 pt-4 pb-4 mb-4 flex flex-col my-2 h-60 bg-gray-100 w-[378px]">
             <div className="border text-xl font-semibold px-2 py-2 text-center m-1 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
               G price : {grossprice} tax : {tax}

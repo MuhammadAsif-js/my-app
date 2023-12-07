@@ -156,121 +156,83 @@ const Page = () => {
 
   return (
       <section className="flex text-black justify-center flex-wrap items-center m-10 cursor-pointer gap-3">
-        <div className="shadow-md rounded px-8 pt-6 max-h-[400px] pb-8 mb-4 flex flex-col my-2 w-96 bg-gray-100 sm:text-lg">
-          <div className="mb-4">
-            <label
-              htmlFor="tripDistance"
-              className="block text-gray-700 font-bold mb-2"
-            >
-              Trip Distance
-            </label>
-            <div className="flex items-center border border-gray-300 rounded-md">
-              <input
-                defaultValue={tripDistance}
-                onChange={(e) => setTripDistance(+e.target.value)}
-                id="tripDistance"
-                type="number"
-                className="w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
-              />
-              <select
-                className="py-2 px-3 border-l border-gray-300"
-                onChange={(e) => setOptiondistance(e.target.value)}
-              >
-                <option value="Miles">Miles</option>
-                <option value="Kilometers">Kilometers (km)</option>
-              </select>
-            </div>
-          </div>
-          <div className="mb-4">
-            <label
-              htmlFor="fuelEfficiency"
-              className="block text-gray-700 font-bold mb-2"
-            >
-              Fuel Efficiency
-            </label>
-            <div className="flex items-center border border-gray-300 rounded-md">
-              <input
-                id="fuelEfficiency"
-                defaultValue={fuelEfficiency}
-                onChange={(e) => setFuelEfficiency(+e.target.value)}
-                type="number"
-                className="w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
-              />
-              <select
-                className="py-2 px-3 border-l border-gray-300"
-                onChange={(e) => setOptionefficiency(e.target.value)}
-              >
-                <option value="Milespergallon">Miles per gallon</option>
-                <option value="Litersper100km">Litres per 100 km</option>
-                <option value="Kilometerperliter">Kilometer per liter</option>
-                <option value="Literspermile">Liters per mile</option>
-              </select>
-            </div>
-          </div>
-          <div>
-            <label
-              htmlFor="fuelPrice"
-              className="block text-gray-700 font-bold mb-2"
-            >
-              Fuel Price
-            </label>
-            <div className="flex items-center border border-gray-300 rounded-md">
-              <input
-                id="fuelPrice"
-                defaultValue={fuelPrice}
-                onChange={(e) => setFuelPrice(+e.target.value)}
-                type="number"
-                className="w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
-              />
-              <select
-                className="py-2 px-3 border-l border-gray-300"
-                onChange={(e) => setOptionprice(e.target.value)}
-              >
-                <option value="Pergallon">Per gallon</option>
-                <option value="Perliter">Per liter</option>
-              </select>
-            </div>
-          </div>
+<div className="shadow-md rounded px-4 sm:px-8 pt-6 max-h-[400px] pb-8 mb-4 flex flex-col my-2 w-full sm:w-96 bg-gray-100 sm:text-lg">
+  <div className="mb-4">
+    <label
+      htmlFor="tripDistance"
+      className="block text-gray-700 font-bold mb-2"
+    >
+      Trip Distance
+    </label>
+    <div className="flex items-center border border-gray-300 rounded-md">
+      <input
+        defaultValue={tripDistance}
+        onChange={(e) => setTripDistance(+e.target.value)}
+        id="tripDistance"
+        type="number"
+        className="w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
+      />
+      <select
+        className="py-2 px-3 border-l border-gray-300"
+        onChange={(e) => setOptiondistance(e.target.value)}
+      >
+        <option value="Miles">Miles</option>
+        <option value="Kilometers">Kilometers (km)</option>
+      </select>
+    </div>
+  </div>
+  <div className="mb-4">
+    <label
+      htmlFor="fuelEfficiency"
+      className="block text-gray-700 font-bold mb-2"
+    >
+      Fuel Efficiency
+    </label>
+    <div className="flex items-center border border-gray-300 rounded-md">
+      <input
+        id="fuelEfficiency"
+        defaultValue={fuelEfficiency}
+        onChange={(e) => setFuelEfficiency(+e.target.value)}
+        type="number"
+        className="w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
+      />
+      <select
+        className="py-2 px-3 border-l border-gray-300"
+        onChange={(e) => setOptionefficiency(e.target.value)}
+      >
+        <option value="Kilometerperliter">Km per liter</option>
+        <option value="Milespergallon">Miles per gallon</option>
+        <option value="Litersper100km">Litres per 100 km</option>
+        <option value="Literspermile">Liters per mile</option>
+      </select>
+    </div>
+  </div>
+  <div>
+    <label
+      htmlFor="fuelPrice"
+      className="block text-gray-700 font-bold mb-2"
+    >
+      Fuel Price
+    </label>
+    <div className="flex items-center border border-gray-300 rounded-md">
+      <input
+        id="fuelPrice"
+        defaultValue={fuelPrice}
+        onChange={(e) => setFuelPrice(+e.target.value)}
+        type="number"
+        className="w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
+      />
+      <select
+        className="py-2 px-3 border-l border-gray-300"
+        onChange={(e) => setOptionprice(e.target.value)}
+      >
+        <option value="Pergallon">Per gallon</option>
+        <option value="Perliter">Per liter</option>
+      </select>
+    </div>
+  </div>
+</div>
 
-          {/* <label classNameName="block text-gray-700 text-sm font-bold mb-2" htmlFor="price">
-          Price:
-        </label>
-        <input
-          classNameName="shadow appearance-none border rounded w-full font-semibold py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          defaultValue={price}
-          onChange={(e) => setPrice(+e.target.value)}
-          type="number"
-          id="price"
-        />
-
-        <label
-          classNameName="block text-gray-700 text-sm font-bold mb-2 mt-4"
-          htmlFor="tip"
-        >
-          Tip %:
-        </label>
-        <input
-          classNameName="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline font-semibold"
-          defaultValue={tip}
-          onChange={(e) => setTip(+e.target.value)}
-          type="number"
-          id="tip"
-        />
-
-        <label
-          classNameName="block text-gray-700 text-sm font-bold mb-2 mt-4"
-          htmlFor="people"
-        >
-          Number of people:
-        </label>
-        <input
-          classNameName="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          defaultValue={people}
-          onChange={(e) => setPeople(+e.target.value)}
-          type="number"
-          id="people"
-        /> */}
-        </div>
 
         <div className="shadow-md rounded px-4 pt-4 pb-4  flex flex-col my-2 h-68 bg-gray-100 w-[378px]">
           <h1 className="text-2xl font-semibold mb-4">Results: {total} $</h1>
