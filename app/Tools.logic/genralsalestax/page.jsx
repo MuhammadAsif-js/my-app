@@ -51,7 +51,7 @@ const page = () => {
   }, [netprice, gst, grossprice, tax]);
 
   return (
-      <section className="flex justify-center flex-wrap items-center m-4 cursor-pointer gap-3">
+      <section className="flex text-black justify-center flex-wrap items-center m-4 cursor-pointer gap-3">
         <div className="shadow-md rounded px-8 pt-6 max-h-[300px] pb-8 mb-4 flex flex-col my-2 w-60 bg-gray-100 sm:text-lg">
           <div>
             <label className="" htmlFor="">

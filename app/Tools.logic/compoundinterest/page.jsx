@@ -69,7 +69,7 @@ const page = () => {
     addInterest,
   ]);
   return (
-      <section className="flex justify-center flex-wrap items-center m-6 cursor-pointer gap-3">
+      <section className=" text-black flex justify-center flex-wrap items-center m-6 cursor-pointer gap-3">
         <div className="shadow-md rounded px-8 pt-6 max-h-[400px] pb-8 mb-4 flex flex-col my-2 w-96 bg-gray-100 sm:text-lg">
           <div className="flex flex-wrap items-center justify-between mb-3">
             <label

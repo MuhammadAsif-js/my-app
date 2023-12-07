@@ -127,7 +127,7 @@ const page = () => {
   }, [age, feet, inches, gender, weight, activity]);
 
   return (
-      <section className="flex justify-center flex-wrap items-center m-7 cursor-pointer gap-3">
+      <section className=" text-black flex justify-center flex-wrap items-center m-7 cursor-pointer gap-3">
         <div className="shadow-md rounded px-8 pt-6 max-h-[400px] pb-8 mb-4 flex flex-col my-2 w-96 bg-gray-100 sm:text-lg">
           <p className="font-bold text-xl text-red-600">Calorie Counter</p>
           <div className="flex items-center ">

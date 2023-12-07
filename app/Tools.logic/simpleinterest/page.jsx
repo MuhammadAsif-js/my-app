@@ -112,7 +112,7 @@ const Page = () => {
     compoundPeriodUnit,
   ]);
   return (
-      <section className="flex justify-center flex-wrap items-center m-10 cursor-pointer gap-3">
+      <section className="flex text-black justify-center flex-wrap items-center m-10 cursor-pointer gap-3">
         <div className="shadow-md rounded px-8 pt-6 max-h-[400px] pb-8 mb-4 flex flex-col my-2 w-72 bg-gray-100 sm:text-lg">
           {/* <p className="text-xl font-semibold mb-4">Interest Calculator</p> */}
           <label className="font-semibold" htmlFor="">

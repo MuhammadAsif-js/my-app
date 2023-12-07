@@ -107,7 +107,8 @@ const page = () => {
   };
 
   return (
-      <section className="flex justify-center flex-wrap items-center m-6 cursor-pointer gap-3">
+      <section className="flex justify-center flex-wrap items-center
+      text-black m-6 cursor-pointer gap-3">
         <div className="shadow-md rounded px-5 pt-6 max-h-[320px] pb-8 mb-4 flex flex-col my-2 w-96 bg-gray-100 sm:text-sm">
           <div>
             <div className="flex items-center my-4">

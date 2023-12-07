@@ -37,7 +37,7 @@ const page = () => {
   };
 
   return (
-      <section className="flex flex-col sm:flex-row justify-start items-center mx-auto max-w-7xl mt-8 sm:items-center">
+      <section className="flex text-black flex-col sm:flex-row justify-start items-center mx-auto max-w-7xl mt-8 sm:items-center">
       <div className="shadow-md rounded p-4 mb-8 sm:mb-0 sm:mr-8 bg-white w-full sm:w-[350px] md:w-[400px] lg:w-[420px]">
           <div>
             <span className="text-gray-700 font-semibold text-lg">

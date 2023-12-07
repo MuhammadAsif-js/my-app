@@ -63,7 +63,7 @@ const Page = () => {
   ]);
 
   return (
-      <section className="flex flex-wrap  items-center gap-3 mx-10 cursor-pointer sm:flex justify-center py-7">
+      <section className="flex text-black flex-wrap  items-center gap-3 mx-10 cursor-pointer sm:flex justify-center py-7">
         <div className=" shadow-md rounded px-3 pt-4 pb-3 mb-3 flex flex-col my-2 w-[388px] bg-gray-100 sm:w-auto sm:">
           <p className="text-xl font-semibold mb-4 text-center">
             Password Generator
