@@ -1,28 +1,18 @@
 import React from "react";
+import RoundLogic from "../../Tools.logic/RoundingCalculator.logic/page";
 
 const page = () => {
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-
   return (
     <section>
       <div
         style={{
           maxWidth: "screen",
           minWidth: "auto",
-          fontFamily: "cursive"
+          fontFamily: "EB Garamond, serif",
+          fontSize: "1.3rem",
+          fontWeight: "600",
+          lineHeight: "1.5",
+          color: "var(--foreground-rgb)",
         }}
         className=" pr-3 md:flex "
       >
@@ -35,7 +25,7 @@ const page = () => {
           className=" lg:px-12 md:px-6 sm:px-3 py-3 "
         >
           <h1 className="font-bold text-xl lg:text-xl xl:text-2xl pb-3 text-blue-900">
-            Pregnancy Calculator
+            Rounding Calculator
           </h1>
           <p className="font-medium text-base lg:text-base xl:text-lg pb-2">
             Calculate your due date and the number of weeks you are pregnant.
@@ -43,84 +33,7 @@ const page = () => {
             maxime optio quo nostrum.
           </p>
           {/* start */}
-          <div className="text-center">
-            <h2 className="relative bg-sky-700 pb-2 text-white font-medium text-xl border border-black rounded-md mb-4">
-              <span className="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-1/2 w-6 h-6 bg-white rounded-full flex justify-center items-center">
-                <span className="w-3 h-3 bg-sky-900 transform rotate-45"></span>
-              </span>
-              Pregnancy Due Date Calculator
-            </h2>
-
-            <div className="form-container bg-slate-200 px-6 py-4 rounded shadow-lg flex flex-col items-center animate-fadeIn border border-black">
-              <div className="mb-4">
-                <label
-                  htmlFor="calculationType"
-                  className="mr-2 font-medium text-lg"
-                >
-                  Calculated based on:
-                </label>
-                <select
-                  name="calculationType"
-                  id="calculationType"
-                  className="border border-gray-300 rounded px-3 py-1"
-                >
-                  <option value="lastMenstrualPeriod ">
-                    Last Menstrual Period
-                  </option>
-                  <option value="conceptionDate">Conception Date</option>
-                  <option value="estimatedDueDate">Estimated Due Date</option>
-                </select>
-              </div>
-
-              <div className="flex items-center mb-4">
-                <label htmlFor="dueMonth" className="mr-2 text-lg font-medium">
-                  Your due date is:
-                </label>
-                <select
-                  name="dueMonth"
-                  id="dueMonth"
-                  className="border border-gray-300 rounded px-3 py-1 mr-2"
-                >
-                  {months.map((month, index) => (
-                    <option key={index + 1} value={index + 1}>
-                      {month}
-                    </option>
-                  ))}
-                </select>
-                <select
-                  name="dueDay"
-                  id="dueDay"
-                  className="border border-gray-300 rounded px-3 py-1 mr-2"
-                >
-                  {Array.from({ length: 31 }, (_, i) => i + 1).map((day) => (
-                    <option key={day} value={day}>
-                      {day}
-                    </option>
-                  ))}
-                </select>
-                <select
-                  name="dueYear"
-                  id="dueYear"
-                  className="border border-gray-300 rounded px-3 py-1"
-                >
-                  {Array.from({ length: 27 }, (_, i) => 2000 + i).map(
-                    (year) => (
-                      <option key={year} value={year}>
-                        {year}
-                      </option>
-                    )
-                  )}
-                </select>
-              </div>
-
-              <button className="relative bg-green-700 hover:bg-green-600 text-white font-bold py-2 px-4 shadow-md transition duration-300 ease-in-out mt-2 rounded">
-                Calculate
-                <span className="absolute top-0 left-0 -mt-1 -ml-1 w-4 h-4 bg-white rounded-xl flex justify-center items-center">
-                  <span className="w-2 h-2 bg-green-900 transform rotate-45"></span>
-                </span>
-              </button>
-            </div>
-          </div>
+         <RoundLogic/>
           {/* related */}
           <div className="related bg-gray-200 rounded-sm p-2 md:p-3 shadow-md mt-6 mb-5">
             <h3 className="text-lg font-semibold text-gray-900 mb-3 md:text-base">
@@ -136,19 +49,6 @@ const page = () => {
               </button>
             </div>
           </div>
-
-          {/* <div className="related relative bg-gray-200 rounded-sm p-4 shadow-md mt-10 mb-5">
-            <div>
-              <span className="text-xl font-bold text-gray-800 mb-2 absolute bottom-3 bg-gray-200 p-1 px-2">
-                Related Calculators
-              </span>
-            </div>
-
-            <div className=" absolute  top-1">
-              <button className=" bg-sky-700 text-white font-medium px-3 py-1 rounded-sm m-2 hover:bg-sky-600">Period Calculator</button>
-              <button className=" absolute left-24 bg-sky-700 text-white font-medium px-3 py-1 rounded-sm m-2 mx-20 hover:bg-sky-600">hbscvsdt</button>
-            </div>
-          </div> */}
 
           {/* Article */}
 
