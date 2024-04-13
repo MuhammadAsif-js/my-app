@@ -87,13 +87,7 @@ const page = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
                   adipisci culpa sunt fugiat consequatur quas architecto,
                   dignissimos ea cumque obcaecati dolorem ad molestias, quidem
-                  sit necessitatibus ut odio quis ipsam libero et eaque illum
-                  labore facilis. Repellendus ipsam eos, eius non alias dolorem
-                  ducimus aspernatur adipisci accusamus neque animi ex magnam,
-                  eum quae necessitatibus dicta molestiae. Corrupti sapiente,
-                  aliquam enim excepturi at aspernatur voluptatum qui provident
-                  vero nemo quam est ut obcaecati odit rem. Ex est, quaerat
-                  dicta, labore ea porro incidunt corrupti, eligendi
+                  sit nrro incidunt corrupti, eligendi
                   consequuntur fugiat animi libero quos maiores perspiciatis
                   ipsam tempore! Hic eveniet ducimus ea beatae itaque blanditiis
                   corrupti nemo error? Delectus, voluptas vitae! Atque
