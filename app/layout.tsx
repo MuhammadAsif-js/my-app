@@ -1,5 +1,6 @@
 import React from "react";
-import Navbar from "./Navbar/page";
+import Navbary from "./Navbar/page.jsx";
+import Footer from "../app/Tools.logic/footer/page";
 import "./globals.css";
 import { Metadata } from "next";
 import Script from "next/script";
@@ -17,14 +18,19 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => (
   <html lang="en">
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="google-site-verification" content="dGBBkNwH0r3qsHb2D8y1KYPIFYDC6SFq8k4x72hpqJw" />
+      <meta
+        name="google-site-verification"
+        content="dGBBkNwH0r3qsHb2D8y1KYPIFYDC6SFq8k4x72hpqJw"
+      />
+      
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
       />
+
       <Script
-        strategy="afterInteractive"  //lazyOnload
+        strategy="afterInteractive" //lazyOnload
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.CALCULATORS_TRACKING_ID}`}
       />
 
@@ -40,8 +46,9 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => (
       </Script>
     </head>
     <body>
-      <Navbar />
+      <Navbary />
       {children}
+      <Footer />
     </body>
   </html>
 );

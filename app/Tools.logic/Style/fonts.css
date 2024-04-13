@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.sectionFont{
+    font-family: "Rambla", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--foreground-rgb);
+}
+.navvbar{
+    font-family: "EB Garamond", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--foreground-rgb);
+}
