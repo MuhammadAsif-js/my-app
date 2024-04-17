@@ -5,7 +5,7 @@ import Link from "next/link"; // Import Link from Next.js
 
 import Head from "next/head";
 
-function Navbar({ Component, pageProps }) {
+function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
