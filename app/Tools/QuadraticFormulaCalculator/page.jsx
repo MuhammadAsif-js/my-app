@@ -1,178 +1,147 @@
 import React from "react";
-import Moonlogic from "../../Tools.logic/Quadratic.logic/page";
-import fonts from "../../Tools.logic/Style/fonts.css";
+import Quardaticlogic from "../../Tools.logic/Quadratic.logic/page";
+import Related from "../../Tools.logic/RelatedCalculators/page";
 
-const page = () => {
+const Page = () => {
   return (
-    <section>
-      <div
-        style={{
-          maxWidth: "screen",
-          minWidth: "auto",
-          fontFamily: "Montserrat, sans-serif",
-        }}
-        className=" pr-3 md:flex "
-      >
-        {/* calc & article */}
-        <div
-          style={{
-            width: "100%",
-            backgroundColor: "white",
-          }}
-          className=" lg:px-12 md:px-6 sm:px-3 py-3 "
-        >
-          <h1 className="font-bold text-xl lg:text-xl xl:text-2xl pb-3 text-blue-900">
-            Quadratic Formula Calculator
-          </h1>
-          <p className="font-medium text-base lg:text-base xl:text-lg pb-2">
-            Calculate your due date and the number of weeks you are pregnant.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            maxime optio quo nostrum.
-          </p>
-          {/* start */}
-          <Moonlogic />
-          {/* related */}
-          <div className="related bg-gray-200 rounded-sm p-2 md:p-3 shadow-md mt-6 mb-5">
-            <h3 className="text-lg font-semibold text-gray-900 mb-3 md:text-base">
-              Related:
-            </h3>
+    <>
+      <section>
+        <div className="flex flex-col md:flex-row">
+          {/* Main content */}
+          <div className="flex-1 lg:px-12 md:px-6 sm:px-3 py-3">
+            <h1 className="font-bold text-xl lg:text-xl xl:text-2xl pb-3 text-blue-900">
+              The Quadratic Formula Calculator
+            </h1>
+            <p className="font-medium text-base lg:text-base xl:text-lg pb-2">
+              Discover the convenience and efficiency of the Quadratic Formula
+              Calculator—a modern tool transforming how we solve quadratic
+              equations. This article explores its user-friendly interface,
+              precise solutions, and impact on mathematical proficiency, making
+              it essential for students, educators, and professionals
+            </p>
+            {/* Moon Sign Calculator Component */}
+            <Quardaticlogic />
+            {/* Article */}
+            <article className="shadow-lg lg:p-3">
+              <h2 className="text-2xl font-bold mb-6 text-gray-900 text-center">
+                Embracing the Power of Mathematics
+              </h2>
+              <div className="bg-white rounded-lg overflow-hidden">
+                <div className="">
+                  <p>
+                    In the world of mathematics, specific solutions attract
+                    attention for their energy as well as adaptability. One such
+                    treasure is the Quadratic Formula, a keystone of algebraic
+                    problem-solving. Matched with modern-day innovation, like
+                    the Quadratic Formula Calculator, this formula comes to be
+                    not simply a mathematical device however an entrance to
+                    opening complicated formulas with convenience.
+                  </p>
+                  <h2 className="text-xl font-semibold mb-3 text-blue-600">
+                    Understanding Calculator Use
+                  </h2>
+                  <p className="text-base leading-relaxed mb-6 text-gray-700">
+                    Prior to diving right into the complexities of the Quadratic
+                    Formula, allow's initially understand the energy of a
+                    Quadratic Formula Calculator. This electronic device
+                    streamlines the procedure of addressing quadratic formulas,
+                    supplying immediate remedies for variables like 'x.' Its
+                    easy to use user interface as well as exact calculations
+                    make it vital for pupils, teachers, and also experts alike
+                  </p>
+                  <h2 className="text-xl font-semibold mb-3 text-blue-600">
+                    Examples Utilizing the Quadratic Formula
+                  </h2>
+                  <p className="text-base leading-relaxed mb-6 text-gray-700">
+                    To much better recognize its application, allow's discover a
+                    couple of instances: 1. **Example 1**: - Here, a = 1, b = 5,
+                    plus c = 6. - Plugging these worths right into the Quadratic
+                    Formula generates the remedies: \( x = -2 \) as well as \( x
+                    = -3 \).
+                  </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <button className="bg-sky-700 text-white font-medium px-2 py-2 rounded-sm hover:bg-sky-600">
-                Period Calculator
-              </button>
-              <button className="bg-sky-700 text-white font-medium px-2 py-2 rounded-sm hover:bg-sky-600">
-                Due Date Calculator
-              </button>
-            </div>
-          </div>
-
-          {/* Article */}
-
-          <article className=" mx-auto px-2 md:px-0 shadow-lg lg:p-3">
-            <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold mb-6 text-gray-900 text-center">
-              Due Date Calculator
-            </h2>
-            <div className="bg-white rounded-lg overflow-hidden">
-              <div className="">
-                <p className="text-lg leading-relaxed mb-6 text-gray-800">
-                  Calculate your due date and the number of weeks you are
-                  pregnant.
-                </p>
-                <h3 className="text-xl font-semibold mb-3 text-blue-600">
-                  Subheading
-                </h3>
-                <p className="text-base leading-relaxed mb-6 text-gray-700">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Inventore similique laudantium vero. Quia doloribus odio
-                  assumenda exercitationem accusamus sed fugit animi, fuga
-                  cupiditate optio provident nisi consequuntur eos rem dolor
-                  hic, praesentium sit commodi vel possimus beatae cumque ullam
-                  perferendis veniam! Inventore repellat laborum aut praesentium
-                  illo minus obcaecati cum dolores necessitatibus reiciendis,
-                  ipsam repellendus impedit totam. Eveniet ut nihil obcaecati
-                  quas accusantium iusto quasi quo cum laudantium vel minima
-                  ducimus aliquid, debitis repudiandae, asperiores similique
-                  modi eligendi corrupti nulla culpa? Ipsum placeat dolorem
-                  dicta minima suscipit est doloribus modi quod, iusto
-                  consequatur provident? Natus quibusdam dolores culpa odio?
-                  Facilis sed temporibus veritatis necessitatibus nulla fuga id
-                  vero. Eius ullam temporibus sed, sequi perspiciatis debitis
-                  numquam error molestiae placeat porro.
-                </p>
-                <h4 className="text-lg font-semibold mb-3 text-blue-600">
-                  Another Subheading
-                </h4>
-                <p className="text-base leading-relaxed mb-6 text-gray-700">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                  adipisci culpa sunt fugiat consequatur quas architecto,
-                  dignissimos ea cumque obcaecati dolorem ad molestias, quidem
-                  sit nrro incidunt corrupti, eligendi
-                  consequuntur fugiat animi libero quos maiores perspiciatis
-                  ipsam tempore! Hic eveniet ducimus ea beatae itaque blanditiis
-                  corrupti nemo error? Delectus, voluptas vitae! Atque
-                  consectetur aperiam aliquid!
-                </p>
-                <h5 className="text-lg font-semibold mb-3 text-blue-600">
-                  Yet Another Subheading
-                </h5>
-                <p className="text-base leading-relaxed mb-6 text-gray-700">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Eaque maxime iste quos magni cupiditate illum blanditiis
-                  possimus voluptas voluptatum dolor dicta debitis, dignissimos
-                  rem. Dicta quod sapiente, maiores id pariatur neque incidunt
-                  ab vel aliquam quae architecto repellendus magni molestias.
-                  Ipsum facilis aut consectetur deserunt ratione. Dolores harum,
-                  porro quo enim eaque obcaecati repudiandae voluptatum non
-                  voluptates labore in laboriosam ut et tempora sunt repellat,
-                  perferendis veniam sed. Dolorum assumenda sapiente earum
-                  labore voluptates quasi dolorem, repellat quia, officia
-                  quaerat aspernatur quae explicabo magni eligendi?
-                  Reprehenderit fugit distinctio, similique consequuntur quas
-                  perspiciatis necessitatibus dolor, molestiae adipisci vitae
-                  sit nam architecto possimus dolores magni. Minus qui
-                  distinctio officia laborum unde voluptatem voluptates dolor
-                  harum totam quas. Perspiciatis tenetur temporibus culpa
-                  praesentium, quod fugiat quaerat omnis sunt blanditiis
-                  excepturi ipsum facere nobis ea porro facilis corporis.
-                  Blanditiis pariatur tempore hic, dignissimos accusantium
-                  exercitationem magni, perferendis impedit dolorem voluptatem
-                  veritatis soluta saepe. Facilis, cupiditate ipsum. Recusandae
-                  in quis, commodi minima, voluptatem doloribus quae quisquam ut
-                  sequi magnam reiciendis illo repudiandae sed? Quis,
-                  repellendus.
-                </p>
+                  <h2 className="text-xl font-semibold mb-3 text-blue-600">
+                    Deriving the Quadratic Formula: A Step-By-Step Exploration
+                  </h2>
+                  <p className="text-base leading-relaxed mb-6 text-gray-700">
+                    Understanding just how the Quadratic Formula is obtained
+                    boosts our understanding of its capability. By finishing the
+                    square on the basic quadratic formula, we come to the
+                    acquainted kind of the Quadratic Formula. This acquired
+                    procedure clarifies the operations of the formula as well as
+                    its link to essential algebraic ideas.
+                  </p>
+                  <h2 className="text-xl font-semibold mb-3 text-blue-600">
+                    The Quadratic Formula: An In-Depth Analysis
+                  </h2>
+                  <p className="text-base leading-relaxed mb-6 text-gray-700">
+                    The Quadratic Formula, obtained via meticulous algebraic
+                    control, offers as an effective device for addressing
+                    quadratic formulas of differing ins and out. Its framework
+                    encapsulates the significance of quadratic features,
+                    supplying a methodical method to locating remedies coupled
+                    with assessing important factors.
+                  </p>
+                  <h2 className="text-xl font-semibold mb-3 text-blue-600">
+                    Leveraging Technology: The Quadratic Formula Calculator
+                  </h2>
+                  <p className="text-base leading-relaxed mb-6 text-gray-700">
+                    In today's electronic age, devices like the Quadratic
+                    Formula Calculator reinvent exactly how we come close to
+                    mathematical obstacles. With simply a couple of clicks,
+                    individuals can input coefficients along with immediately
+                    obtain exact remedies. This innovation not just conserves
+                    time yet additionally encourages expedition plus testing
+                    with various formulas and also circumstances.
+                  </p>
+                  <h2 className="text-xl font-semibold mb-3 text-blue-600">
+                    Enhancing Mathematical Proficiency
+                  </h2>
+                  <p className="text-base leading-relaxed mb-6 text-gray-700">
+                    By incorporating the Quadratic Formula Calculator right into
+                    academic educational programs, trainees can grow their
+                    understanding of quadratic formulas. Interactive workouts as
+                    well as real-time responses promote energetic knowing and
+                    also equip trainees to master algebraic ideas with
+                    self-confidence.
+                  </p>
+                  <h3 className="text-xl font-semibold mb-3 text-blue-600">
+                    Conclusion: Empowering Problem-Solvers
+                  </h3>
+                  <p className="text-base leading-relaxed mb-6 text-gray-700">
+                    To conclude, the Quadratic Formula Calculator stands as a
+                    testimony to the combination of mathematical concept and
+                    also technical technology. Its accessibility as well as
+                    accuracy make it an important property for mathematicians,
+                    designers, researchers, and also lovers worldwide. As we
+                    remain to accept electronic devices in education and
+                    learning and also expert areas, the Quadratic Formula
+                    Calculator continues to be a sign of mathematical expertise,
+                    allowing us to dominate intricate formulas as well as
+                    untangle the secrets of quadratic features with ease.
+                  </p>
+                </div>
               </div>
-            </div>
-          </article>
-        </div>
-        {/* Relevant calculators side */}
-        <div className="bg-blue-100 rounded-lg p-4 shadow-lg flex flex-col items-center mt-5 mb-5 sm:ml-4 md:ml-0 lg:ml-0 xl:ml-0 h-80">
-          <div className="mb-4">
-            <input
-              type="search"
-              className="lg:w-48 sm:w-36 rounded-md px-4 py-2 border border-gray-300 focus:outline-none focus:border-blue-500"
-              placeholder="Search..."
-            />
-            <button className="bg-sky-600 text-white font-medium px-4 py-2 rounded-md ml-2 hover:bg-sky-500">
-              Search
-            </button>
+            </article>
           </div>
-
-          <div className="text-center">
-            <h2 className="bg-sky-600 text-white px-4 py-2 text-lg font-semibold rounded-md mb-3">
-              Explore More Calculators
-            </h2>
-            <div className="flex flex-wrap justify-center items-center mt-2">
-              <button className="bg-sky-700 text-white font-medium px-4 py-2 rounded-md hover:bg-sky-600 text-sm md:text-base lg:text-base mr-2 mb-2">
-                BMI Calculator
-              </button>
-              <button className="bg-sky-700 text-white font-medium px-4 py-2 rounded-md hover:bg-sky-600 text-sm md:text-base lg:text-base mr-2 mb-2">
-                Pregnancy Calculator
-              </button>
-              <button className="bg-sky-700 text-white font-medium px-4 py-2 rounded-md hover:bg-sky-600 text-sm md:text-base lg:text-base mb-2">
-                Period Calculator
-              </button>
-            </div>
+          {/* Relevant calculators side */}
+          <div className="w-full md:w-1/3 lg:px-12 md:px-6 sm:px-3 py-3">
+            <Related />
           </div>
         </div>
-
-        {/* relevant end */}
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
-export default page;
+export default Page;
 
 export function generateMetadata({ params }) {
   return {
-    title: "solving quadratic formula calculator",
+    title: "Quadratic Formula Calculator",
     description:
-      "Calculate your BMI using our free BMI Calculator to determine the amount of body fat and amount of lean body mass.",
+      "Quadratic formula calculator: precise solutions, step-by-step process for real & complex roots, based on user input 'a,' 'b,' 'c'",
     keywords:
-      "bmi, bmi calculator, bmi calc, body mass index, body mass index calculator, body mass index calc, bmi formula, bmi formula calculator, bmi formula calc, bmi formula calculator, bmi formula calc, bmi formula calc, bmi formula calculator, bmi formula calc, bmi",
+      "quadratic equation, quadratic formula, calculator, real roots, complex roots, step-by-step solutions, input values, 'a,' 'b,' 'c,' detailed workings, problem-solving, learning, efficiency.",
   };
 }
-
-

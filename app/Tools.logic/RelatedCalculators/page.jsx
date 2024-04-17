@@ -6,10 +6,10 @@ const page = () => {
     <div className="mb-4">
       <input
         type="search"
-        className="lg:w-48 sm:w-36 rounded-md px-4 py-2  border border-gray-300 focus:outline-none focus:border-blue-500"
+        className="lg:w-42 sm:w-28 rounded-md px-4 py-2  border border-gray-300 focus:outline-none focus:border-blue-500"
         placeholder="Search..."
       />
-      <button className="bg-sky-600 text-white font-medium px-4 py-2  rounded-md ml-2 hover:bg-sky-500">
+      <button className="bg-sky-600 text-white font-medium px-2 py-2  rounded-md ml-2 hover:bg-sky-500 lg:w-auto md:w-16">
         Search
       </button>
     </div>
