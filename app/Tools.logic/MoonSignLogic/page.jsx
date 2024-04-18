@@ -144,19 +144,19 @@ function App() {
         {/* Start */}
         <div>
           <div>
-            <label className=" pr-2 font-semibold">Birth Date:</label>
+            <label className=" pr-2 font-semibold text-black">Birth Date:</label>
             <input
               type="date"
-              className="appearance-none bg-transparent border-b-2 border-gray-300 w-auto mb-2 py-2 px-4 leading-tight focus:outline-none focus:border-blue-500"
+              className="appearance-none text-black bg-transparent border-b-2 border-gray-300 w-auto mb-2 py-2 px-4 leading-tight focus:outline-none focus:border-blue-500"
               value={birthDate}
               onChange={(e) => setBirthDate(e.target.value)}
             />
           </div>
           <div>
-            <label className="mb-2 pr-2 font-semibold">Birth Time:</label>
+            <label className="mb-2 pr-2 font-semibold text-black">Birth Time:</label>
             <input
               type="time"
-              className="appearance-none bg-transparent border-b-2 border-gray-300 w-auto py-2 px-4 leading-tight focus:outline-none focus:border-blue-500"
+              className="appearance-none bg-transparent border-b-2 text-black border-gray-300 w-auto py-2 px-4 leading-tight focus:outline-none focus:border-blue-500"
               value={birthTime}
               onChange={(e) => setBirthTime(e.target.value)}
             />

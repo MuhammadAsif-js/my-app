@@ -12,7 +12,7 @@ const Page = () => {
             <h1 className="font-bold text-xl lg:text-xl xl:text-2xl pb-3 text-blue-900">
               Moon Sign Calculator
             </h1>
-            <p className="font-medium text-base lg:text-base xl:text-lg pb-2">
+            <p className="font-medium text-base lg:text-base xl:text-lg pb-2 text-black">
               Moon Sign estimation delves into emotions and subconscious
               tendencies, contrasting with the Sun Sign's external identity. It
               reveals reactions and innate responses, derived from the Moon's
