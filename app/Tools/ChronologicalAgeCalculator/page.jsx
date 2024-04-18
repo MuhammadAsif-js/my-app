@@ -21,7 +21,7 @@ const Page = () => {
             {/* Moon Sign Calculator Component */}
             <Agelogic />
             {/* Article */}
-            <article className="shadow-lg lg:p-3">
+            <article className="shadow-lg lg:p-3 mt-7">
               <h2 className="text-2xl font-bold mb-3 text-gray-900 text-center">
                 Simple Age Calculator
               </h2>

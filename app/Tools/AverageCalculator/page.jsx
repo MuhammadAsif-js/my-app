@@ -21,7 +21,7 @@ const Page = () => {
             {/* Moon Sign Calculator Component */}
             <Averagelogic />
             {/* Article */}
-            <article className="shadow-lg lg:p-3">
+            <article className="shadow-lg lg:p-3 mt-7">
               <h2 className="text-2xl font-bold mb-6 text-gray-900 text-center">
                 How to Use the Average Calculator
               </h2>
@@ -159,8 +159,8 @@ export function generateMetadata({ params }) {
   return {
     title: "Average Calculator",
     description:
-      "Discover your romantic compatibility with our Love Calculator! Enter your names to reveal your relationship's potential harmony.",
+      "Discover your romantic compatibility with our Love Calculator! Enter your names and birthdates to reveal your relationship's potential harmony.!",
     keywords:
-      "Love Calculator, Love Percentage, Love Compatibility, Relationship Compatibility, Love Meter, Love Calculator by Name, Love Calculator Online, Love Calculator Test, Love Calculator Names, Love Calculator Algorithm, Love Calculator Results, Love Calculator Accuracy, Love Calculator Explained, Love Calculator Interpretation, Love Calculator Meaning, Love Calculator Interpretation, Love Calculator Analysis, Love Calculator Examples, Love Calculator Article, Love Calculator Insights, Love Calculator Philosophy, Love Calculator Definitions",
+      "Average Calculator, Average, Mean, Mode, Range, Weighted Average Calculator, Mean",
   };
 }

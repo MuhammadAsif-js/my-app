@@ -21,7 +21,7 @@ const Page = () => {
             {/* Moon Sign Calculator Component */}
             <Trianglelogic />
             {/* Article */}
-            <article className="shadow-lg lg:p-3">
+            <article className="shadow-lg lg:p-3 mt-7">
               <h2 className="text-2xl font-bold mb-6 text-gray-900 text-center">
                 Triangle Facts, Theorems as well as Laws
               </h2>
@@ -191,8 +191,8 @@ export function generateMetadata({ params }) {
   return {
     title: "Triangle Calculator - Calculate Triangle Sides and Angles",
     description:
-      "The Triangle Calculator swiftly computes area, perimeter, and angles for any triangle type. Ideal for students, designers, and builders needing quick geometric calculations.",
+      "Triangle Calculator is a tool that helps you calculate the sides and angles of a triangle based on the input values provided.",
     keywords:
-      "Love Calculator, Love Percentage, Love Compatibility, Relationship Compatibility, Love Meter, Love Calculator by Name, Love Calculator Online, Love Calculator Test, Love Calculator Names, Love Calculator Algorithm, Love Calculator Results, Love Calculator Accuracy, Love Calculator Explained, Love Calculator Interpretation, Love Calculator Meaning, Love Calculator Interpretation, Love Calculator Analysis, Love Calculator Examples, Love Calculator Article, Love Calculator Insights, Love Calculator Philosophy, Love Calculator Definitions",
+      "Triangle Calculator, Triangle Sides, Triangle Angles, Triangle Area, Triangle Median, Triangle Inradius, Triangle Circumradius, Right Triangle Side and Angle Calculator, Triangle Word Problems, Triangle Applications",
   };
 }
