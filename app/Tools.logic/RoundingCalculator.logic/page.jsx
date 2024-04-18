@@ -163,7 +163,7 @@ const RoundOffCalculator = () => {
             {roundedResult !== "" && (
               <div className="text-center">
                 <h3 className="text-lg font-bold mb-2">Rounded Result:</h3>
-                <p className="text-xl">{roundedResult}</p>
+                <p className="text-xl text-black">{roundedResult}</p>
               </div>
             )}
           </div>

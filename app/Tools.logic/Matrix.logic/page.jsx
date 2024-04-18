@@ -225,7 +225,7 @@ const MatrixCalculator = () => {
         </div>
 
         {/* Matrix B */}
-        <div className="border border-gray-300 p-4 rounded-lg">
+        <div className="border border-gray-300 p-4 rounded-lg text-black">
           <h2 className="text-xl font-semibold mb-4">Matrix B</h2>
           {matrixB.map((row, i) => (
             <div key={i} className="flex space-x-4 mb-2">

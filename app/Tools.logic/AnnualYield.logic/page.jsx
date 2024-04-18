@@ -40,7 +40,7 @@ const APYCalculator = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md">
+    <div className="max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md text-black">
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
       <div>
         <label className="block mb-1">Initial Deposit:</label>

@@ -57,7 +57,7 @@ const IndexPage = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-md">
+    <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-md text-black">
       
       <div className="mb-4">
         <label className="block text-sm font-medium text-gray-700 mb-1">

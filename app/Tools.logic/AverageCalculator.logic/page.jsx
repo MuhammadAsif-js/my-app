@@ -41,7 +41,7 @@ const AverageCalculator = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center text-black">
       <input
         type="text"
         placeholder="Enter values separated by commas"

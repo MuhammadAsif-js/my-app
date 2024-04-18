@@ -12,7 +12,7 @@ const Page = () => {
             <h1 className="font-bold text-xl lg:text-xl xl:text-2xl pb-3 text-blue-900">
               Rounding Calculator
             </h1>
-            <p className="font-medium text-base lg:text-base xl:text-lg pb-2">
+            <p className="font-medium text-base lg:text-base text-black xl:text-lg pb-2">
               Embark on a journey through precision with our guide to the
               Rounding Calculator. Explore rounding methods, fractions, and
               standard form for accurate numerical representation. With FAQs and
@@ -27,7 +27,7 @@ const Page = () => {
               </h2>
               <div className="bg-white rounded-lg overflow-hidden">
                 <div className="">
-                  <p>
+                  <p className="text-base leading-relaxed mb-6 text-gray-700">
                     Before delving into the intricacies of the Rounding
                     Calculator, let's explore the various rounding methods used
                     in mathematical calculations. Understanding these methods

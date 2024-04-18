@@ -91,7 +91,7 @@ const ZScoreCalculator = () => {
   };
 
   return (
-    <div className="max-w-sm mx-auto mt-8 p-4 bg-white rounded-lg shadow-md">
+    <div className="max-w-sm mx-auto mt-8 p-4 bg-white rounded-lg shadow-md text-black">
       {/* <h1 className="text-lg font-semibold mb-2">Z-Score Calculator</h1> */}
       <div className="mb-2">
         <label

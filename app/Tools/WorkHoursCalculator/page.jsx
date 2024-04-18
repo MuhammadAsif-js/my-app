@@ -11,7 +11,7 @@ const Page = () => {
             <h1 className="font-bold text-xl lg:text-xl xl:text-2xl pb-3 text-blue-900">
               Work Hours Calculator 
             </h1>
-            <p className="font-medium text-base lg:text-base xl:text-lg pb-2">
+            <p className="text-black font-medium text-base lg:text-base xl:text-lg pb-2">
             Our Work Hours Calculator streamlines time management, effortlessly tracking your productivity. Input start and end times for instant totals and insights, simplifying your work-life balance.
             </p>
             {/* Moon Sign Calculator Component */}

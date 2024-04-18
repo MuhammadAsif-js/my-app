@@ -12,7 +12,7 @@ const Page = () => {
             <h1 className="font-bold text-xl lg:text-xl xl:text-2xl pb-3 text-blue-900">
               Chronological Age Calculator
             </h1>
-            <p className="font-medium text-base lg:text-base xl:text-lg pb-2">
+            <p className="font-medium text-black text-base lg:text-base xl:text-lg pb-2">
               The Chronological Age Calculator instantly computes your age based
               on your birthdate. It's a useful tool for medical assessments,
               eligibility checks, and personal curiosity. Get accurate age

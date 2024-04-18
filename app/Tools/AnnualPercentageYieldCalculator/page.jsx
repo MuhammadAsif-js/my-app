@@ -12,7 +12,7 @@ const Page = () => {
             <h1 className="font-bold text-xl lg:text-xl xl:text-2xl pb-3 text-blue-900">
               Apy Calculator - Calculate Annual Percentage Yield
             </h1>
-            <p className="font-medium text-base lg:text-base xl:text-lg pb-2">
+            <p className=" text-black font-medium text-base lg:text-base xl:text-lg pb-2">
               The APY Calculator computes Annual Percentage Yield, aiding
               investors in evaluating potential returns accurately. Simplify
               financial planning and make informed investment decisions
@@ -27,7 +27,7 @@ const Page = () => {
               </h2>
               <div className="bg-white rounded-lg overflow-hidden">
                 <div className="">
-                  <p>
+                  <p className="text-base leading-relaxed mb-6 text-gray-700">
                     In today's vibrant economic landscape recognizing crucial
                     metrics like Annual Percentage Yield (APY) is crucial for
                     maximizing financial savings together with financial

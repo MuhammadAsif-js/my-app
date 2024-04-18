@@ -12,7 +12,7 @@ const Page = () => {
             <h1 className="font-bold text-xl lg:text-xl xl:text-2xl pb-3 text-blue-900">
               Matrix Inverse Calculator
             </h1>
-            <p className="font-medium text-base lg:text-base xl:text-lg pb-2">
+            <p className="font-medium text-base lg:text-base xl:text-lg pb-2 text-black">
               Discover the efficiency of our Matrix Inverse Calculator,
               instantly providing inverse solutions for square matrices.
               Streamline your linear algebra tasks and validate your
@@ -28,7 +28,7 @@ const Page = () => {
               </h2>
               <div className="bg-white rounded-lg overflow-hidden">
                 <div className="">
-                  <p>
+                  <p className="text-base leading-relaxed mb-6 text-gray-700">
                     Before diving into the intricacies of matrix inversion,
                     let's grasp the fundamental concept. An inverse of a matrix
                     is like its mathematical counterpart , capable of undoing

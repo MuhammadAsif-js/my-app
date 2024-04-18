@@ -74,7 +74,7 @@ const WorkHoursCalculator = () => {
   };
 
   return (
-    <div className="container mx-auto p-4 max-w-2xl text-center">
+    <div className="container mx-auto p-4 max-w-2xl text-center text-black">
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
         {workHours.map((day, index) => (
           <div key={index} className="bg-white rounded-lg p-2 md:p-4 shadow-md">

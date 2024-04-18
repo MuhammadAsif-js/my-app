@@ -45,7 +45,7 @@ const CoastFireCalculator = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto p-4 bg-white rounded-lg shadow-md">
+    <div className="max-w-lg mx-auto p-4 bg-white rounded-lg shadow-md text-black">
       <h1 className="text-2xl font-semibold mb-4">Coast FIRE Calculator</h1>
       <div className="mb-4 grid grid-cols-2 gap-4">
         <label className="block">

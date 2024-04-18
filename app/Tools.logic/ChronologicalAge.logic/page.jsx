@@ -36,7 +36,7 @@ const ChronologicalAgeCalculator = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center text-black">
       {/* <h1 className="text-3xl font-bold mb-6">Chronological Age Calculator</h1> */}
       <input
         type="date"

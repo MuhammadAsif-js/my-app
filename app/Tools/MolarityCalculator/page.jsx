@@ -12,7 +12,7 @@ const Page = () => {
             <h1 className="font-bold text-xl lg:text-xl xl:text-2xl pb-3 text-blue-900">
               Morality Calculator - Calculate Moral Compatibility
             </h1>
-            <p className="font-medium text-base lg:text-base xl:text-lg pb-2">
+            <p className="font-medium text-base lg:text-base xl:text-lg pb-2 text-black">
               Explore ethical dilemmas and enhance moral reasoning with our
               Morality Calculator. Gain insights into your moral compass and
               navigate complex decisions with clarity.
@@ -26,7 +26,7 @@ const Page = () => {
               </h2>
               <div className="bg-white rounded-lg overflow-hidden">
                 <div className="">
-                  <p>
+                  <p className="text-base leading-relaxed mb-6 text-gray-700">
                     Picture yourself diving into the fascinating world of
                     chemistry, where molarity shines as a guiding star, helping
                     you unravel the mysteries of solution concentration. Whether

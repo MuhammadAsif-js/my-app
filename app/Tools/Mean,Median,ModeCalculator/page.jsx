@@ -12,7 +12,7 @@ const Page = () => {
             <h1 className="font-bold text-xl lg:text-xl xl:text-2xl pb-3 text-blue-900">
               Mean, Median and Mode Calculator
             </h1>
-            <p className="font-medium text-base lg:text-base xl:text-lg pb-2">
+            <p className="font-medium text-base lg:text-base xl:text-lg text-black pb-2">
             The Mean, Median, and Mode Calculator efficiently computes statistical measures for data analysis. It provides quick insights into the central tendencies of a dataset, business, and academic tasks. Simplify your calculations and understand data distributions with ease using this calculator
             </p>
             {/* Moon Sign Calculator Component */}
@@ -24,7 +24,7 @@ const Page = () => {
               </h2>
               <div className="bg-white rounded-lg overflow-hidden">
                 <div className="">
-                  <p>
+                  <p className="text-base leading-relaxed mb-6 text-gray-700">
                   The Mean Median Mode as well as Range Calculator is an adaptable device that help in analytical evaluation supplying important
  understandings right into information circulation
 as well as main propensities. From determining standards to recognizing outliers this calculator enhances complicated analytical

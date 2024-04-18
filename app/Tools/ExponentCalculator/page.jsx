@@ -7,12 +7,11 @@ const Page = () => {
     <>
       <section>
         <div className="flex flex-col md:flex-row">
-          {/* Main content */}
           <div className="flex-1 lg:px-12 md:px-6 sm:px-3 py-3">
             <h1 className="font-bold text-xl lg:text-xl xl:text-2xl pb-3 text-blue-900">
               Exponent Calculator
             </h1>
-            <p className="font-medium text-base lg:text-base xl:text-lg pb-2">
+            <p className="font-medium text-base lg:text-base xl:text-lg pb-2 text-black">
               Exponents are like the magic wands of math, making repeated
               multiplication a breeze. They're super important across various
               math areas like algebra and calculus. In this guide, we'll dive
@@ -28,7 +27,7 @@ const Page = () => {
               </h2>
               <div className="bg-white rounded-lg overflow-hidden">
                 <div className="">
-                  <p>
+                  <p className="text-base leading-relaxed mb-6 text-gray-700">
                     Exponent notation is like a math shorthand for saying
                     "multiply this number by itself this many times." It has two
                     parts: the base number being multiplied and the exponent

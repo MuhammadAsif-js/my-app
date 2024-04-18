@@ -63,7 +63,7 @@ const TriangleCalculator = () => {
   
 
   return (
-    <div className="max-w-lg mx-auto p-6 bg-gray-100 rounded-sm shadow-lg">
+    <div className="max-w-lg mx-auto p-6 bg-gray-100 rounded-sm shadow-lg text-black">
       <div className="flex flex-wrap -mx-3 mb-4">
         <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
           <label className="block mb-1">Side a:</label>

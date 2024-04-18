@@ -12,7 +12,7 @@ const Page = () => {
             <h1 className="font-bold text-xl lg:text-xl xl:text-2xl pb-3 text-blue-900">
               The Quadratic Formula Calculator
             </h1>
-            <p className="font-medium text-base lg:text-base xl:text-lg pb-2">
+            <p className="font-medium text-base lg:text-base xl:text-lg text-black pb-2">
               Discover the convenience and efficiency of the Quadratic Formula
               Calculator—a modern tool transforming how we solve quadratic
               equations. This article explores its user-friendly interface,
@@ -28,7 +28,7 @@ const Page = () => {
               </h2>
               <div className="bg-white rounded-lg overflow-hidden">
                 <div className="">
-                  <p>
+                  <p className="text-base leading-relaxed mb-6 text-gray-700">
                     In the world of mathematics, specific solutions attract
                     attention for their energy as well as adaptability. One such
                     treasure is the Quadratic Formula, a keystone of algebraic

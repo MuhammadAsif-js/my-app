@@ -12,7 +12,7 @@ const Page = () => {
             <h1 className="font-bold text-xl lg:text-xl xl:text-2xl pb-3 text-blue-900">
               Triangle Calculator - Calculate Triangle Sides and Angles
             </h1>
-            <p className="font-medium text-base lg:text-base xl:text-lg pb-2">
+            <p className="font-medium text-base lg:text-base xl:text-lg pb-2 text-black">
               Triangle Calculator is a tool that helps you calculate the sides
               and angles of a triangle based on the input values provided. It is
               a useful resource for students, teachers, and professionals
@@ -27,7 +27,7 @@ const Page = () => {
               </h2>
               <div className="bg-white rounded-lg overflow-hidden">
                 <div className="">
-                  <p>
+                  <p className="text-base leading-relaxed mb-6 text-gray-700">
                     Prior to diving right into the complexities of the Triangle
                     Calculator, allow's discover essential truths, academic
                     community as well as regulations associated with

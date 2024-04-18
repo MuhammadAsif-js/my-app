@@ -51,14 +51,14 @@ const LoveCalculator = () => {
               <input
                 type="text"
                 placeholder="Enter Name 1"
-                className="border border-gray-400 font-semibold rounded px-3 py-2 mr-2"
+                className="border border-gray-400 text-black font-semibold rounded px-3 py-2 mr-2"
                 value={name1}
                 onChange={(e) => setName1(e.target.value)}
               />
               <input
                 type="text"
                 placeholder="Enter Name 2"
-                className="border border-gray font-semibold font-400 rounded px-3 py-2"
+                className="border border-gray font-semibold text-black font-400 rounded px-3 py-2"
                 value={name2}
                 onChange={(e) => setName2(e.target.value)}
               />
@@ -87,7 +87,7 @@ const LoveCalculator = () => {
           </div>
           {loveScore !== null && (
             <div className="mt-8 text-center flex flex-col justify-center items-center">
-              <h2 className="text-2xl font-bold mb-4">Your Love Score: </h2>
+              <h2 className="text-2xl font-bold mb-4 text-black">Your Love Score: </h2>
               <div
                 className={`text-5xl font-bold ${
                   loveScore >= 80
@@ -107,7 +107,7 @@ const LoveCalculator = () => {
                   style={{ width: `${loveScore}%` }}
                 ></div>
               </div>
-              <p className="text-lg mt-4">{loveAdvice}</p>
+              <p className="text-lg mt-4 text-black">{loveAdvice}</p>
             </div>
           )}
         </div>

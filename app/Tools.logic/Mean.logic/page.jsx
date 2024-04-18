@@ -70,7 +70,7 @@ const StatisticalCalculator = () => {
     },[numbers])
 
   return (
-    <div className="calculator bg-white rounded-lg shadow-lg p-6 w-full md:w-1/2 mx-auto mt-8">
+    <div className="calculator bg-white rounded-lg text-black shadow-lg p-6 w-full md:w-1/2 mx-auto mt-8">
       <h2 className="text-2xl font-bold mb-4">Statistical Calculator</h2>
       <input
         type="text"

@@ -12,7 +12,7 @@ const Page = () => {
             <h1 className="font-bold text-xl lg:text-xl xl:text-2xl pb-3 text-blue-900">
               Coast Fire Calculator
             </h1>
-            <p className="font-medium text-base lg:text-base xl:text-lg pb-2">
+            <p className="font-medium text-base lg:text-base xl:text-lg pb-2 text-black">
               Are you dreaming of early retirement but want to take it slow?
               Coast FIRE might be the strategy for you. This calculator helps
               you map out your Coast FIRE journey, making your financial dreams
@@ -27,7 +27,7 @@ const Page = () => {
               </h2>
               <div className="bg-white rounded-lg overflow-hidden">
                 <div className="">
-                  <p>
+                  <p className="text-base leading-relaxed mb-6 text-gray-700">
                     Coast FIRE stands for "Coasting Financial Independence,
                     Retire Early." Unlike traditional FIRE (Financial
                     Independence, Retire Early), where you aim to accumulate

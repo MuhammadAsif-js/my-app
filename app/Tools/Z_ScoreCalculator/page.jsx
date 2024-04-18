@@ -12,7 +12,7 @@ const Page = () => {
             <h1 className="font-bold text-xl lg:text-xl xl:text-2xl pb-3 text-blue-900">
               Z Score Calculator - Calculate Z Score and Percentile
             </h1>
-            <p className="font-medium text-base lg:text-base xl:text-lg pb-2">
+            <p className=" text-black font-medium text-base lg:text-base xl:text-lg pb-2">
               The Z Score Calculator simplifies statistical analysis by
               measuring data points.It's a handy tool for researchers and
               professionals, offering insights into data distribution and
@@ -27,7 +27,7 @@ const Page = () => {
               </h2>
               <div className="bg-white rounded-lg overflow-hidden">
                 <div className="">
-                  <p>
+                  <p className="text-base leading-relaxed mb-6 text-gray-700">
                     Among the crucial functions of the Z-Score Calculator is its
                     capability to identify the likelihood in between 2 z-scores.
                     This capability is especially beneficial in theory screening

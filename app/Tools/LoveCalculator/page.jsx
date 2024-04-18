@@ -12,7 +12,7 @@ const Page = () => {
             <h1 className="font-bold text-xl lg:text-xl xl:text-2xl pb-3 text-blue-900">
               Love Calculator - Calculate Love Percentage
             </h1>
-            <p className="font-medium text-base lg:text-base xl:text-lg pb-2">
+            <p className="font-medium text-base lg:text-base xl:text-lg pb-2 text-black">
               Discover your romantic compatibility with our Love Calculator!
               Enter your names and birthdates to reveal your relationship's
               potential harmony. It's a fun and insightful way to explore love's
@@ -27,7 +27,7 @@ const Page = () => {
               </h2>
               <div className="bg-white rounded-lg overflow-hidden">
                 <div className="">
-                  <p>
+                  <p className="text-base leading-relaxed mb-6 text-gray-700">
                     The Love Calculator has gained popularity as a fun and
                     intriguing tool to estimate the compatibility and love
                     percentage between individuals. While it's not based on

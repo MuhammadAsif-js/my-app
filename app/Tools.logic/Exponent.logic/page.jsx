@@ -32,7 +32,7 @@ const ExponentCalculator = () => {
   };
 
   return (
-    <div className=" flex items-center justify-center">
+    <div className=" flex items-center justify-center text-black">
       <div className="bg-white rounded-lg shadow-lg p-8">
         {/* <h1 className="text-3xl font-semibold text-center mb-6">Exponent Calculator</h1> */}
         <div className="grid grid-cols-2 gap-4">
