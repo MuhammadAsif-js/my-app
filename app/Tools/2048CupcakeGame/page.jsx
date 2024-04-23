@@ -1,6 +1,5 @@
 import React from "react";
-import Zlogic from "../../Tools.logic/Games.logic/page";
-import Related from "../../Tools.logic/RelatedCalculators/page";
+import Zlogic from "../../Tools.logic/Games.logic/page.jsx";
 
 const Page = () => {
   return (
