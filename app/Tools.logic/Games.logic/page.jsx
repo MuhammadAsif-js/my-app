@@ -1,3 +1,4 @@
+
 "use client";
 import React, { useEffect, useState } from "react";
 import "../Games.logic/Game.css";
@@ -9,10 +10,13 @@ const Page = () => {
   );
 
   let [currentScore, setCurrentScore] = useState(0);
-  let [highScore, setHighScore] = useState(
-    localStorage.getItem("2048-highScore") || 0
-  );
+  // let [highScore, setHighScore] = useState(
+  //   localStorage.getItem("2048-highScore") || 0
+  // );
+  let [highScore, setHighScore] = useState(0);
   let [gameOver, setGameOver] = useState(false);
+
+
 
   useEffect(() => {
     initializeGame();
