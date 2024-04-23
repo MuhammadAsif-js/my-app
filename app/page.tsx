@@ -296,6 +296,24 @@ export default function Home() {
           Calculate
         </Link>
       </div>
+      <div className="lg:w-1/4 md:w-1/2 sm:w-full max-w-xs m-4 p-4 bg-blue-100 rounded-lg shadow-md hover:shadow-lg animate-scale transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center cursor-pointer  hover:bg-blue-200 hover:scale-105">
+        <Image
+          src={Math2}
+          alt="Picture of the author"
+          className="rounded-full border-2 border-blue-500 hover:border-blue-700 transition-all duration-500 ease-in-out transform hover:scale-110"
+          width={80}
+          height={80}
+        />
+        <p className="text-gray-800 font-semibold text-md mt-4 transition-all duration-500 ease-in-out transform hover:scale-105">
+        2048 Cupcake Game
+        </p>
+        <Link
+          href="./Tools/2048CupcakeGame"
+          className="mt-4 bg-sky-500 text-white font-bold px-4 py-2 hover:bg-sky-700 scale-110 transition-colors duration-200 ease-in-out rounded-sm animate-pulse hover:shadow-lg hover:scale-105"
+        >
+        Play
+        </Link>
+      </div>
       {/* <div className="lg:w-1/4 md:w-1/2 sm:w-full max-w-xs m-4 p-4 bg-blue-100 rounded-lg shadow-md hover:shadow-lg animate-scale transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center cursor-pointer  hover:bg-blue-200 hover:scale-105">
         <Image
           src={bmicalculator}
