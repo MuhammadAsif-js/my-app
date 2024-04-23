@@ -308,7 +308,7 @@ export default function Home() {
         2048 Cupcake Game
         </p>
         <Link
-          href="./Tools/2048CupcakeGame"
+          href="./Tools/CupcakeGame2048"
           className="mt-4 bg-sky-500 text-white font-bold px-4 py-2 hover:bg-sky-700 scale-110 transition-colors duration-200 ease-in-out rounded-sm animate-pulse hover:shadow-lg hover:scale-105"
         >
         Play
